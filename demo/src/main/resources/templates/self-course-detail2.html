@@ -1,0 +1,516 @@
+<!doctype html>
+<html data-n-head-ssr xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>创造力星球教育</title>
+    <meta data-n-head="ssr" charset="utf-8">
+    <meta data-n-head="ssr" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta data-n-head="ssr" http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta data-n-head="ssr" data-hid="description" name="description" content="创造力星球-专注于少儿编程">
+    <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="创造力星球-专注于少儿编程">
+    <link data-n-head="ssr" rel="icon" type="image/x-icon" href="//img.sanjieke.cn/common/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link href="../static/nava/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/nava/css/scrolling-nav.css" rel="stylesheet">
+    <script src="../static/nava/vendor/jquery/jquery.min.js"></script>
+    <script src="../static/nava/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!--
+    <link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+-->
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../static/nava/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../static/nava/js/scrolling-nav.js"></script>
+    <script src="https://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+
+
+    <script type="text/javascript">
+        $(function() {
+            $(".titleIcon").click(function() {
+                $(".outlineContent").toggle(); //显示时点击为隐藏，隐藏时点击为显示
+                if ($(this).val() == "隐藏") { //修改按钮提示文字
+                    $(this).val("显示")
+                } else {
+                    $(this).val("隐藏")
+                }
+            })
+        })
+    </script>
+
+    <style>
+        .diyi {
+            height: 50px;
+        }
+        
+        .neirong {
+            width: 100%;
+            height: 100%;
+            display: table-cell;
+            /*主要是这个属性*/
+            vertical-align: middle;
+            text-align: center;
+        }
+        
+        .module-20058 .container20058 .fixedMenuContainer {
+            FONT-WEIGHT: 100;
+            width: 130px;
+            padding: 15px;
+            position: fixed;
+            z-index: 300;
+            left: 0;
+            top: 180px;
+            background: #fff;
+            box-shadow: 0 0 10px hsla(0, 0%, 72.9%, .3);
+            border-radius: 8px;
+        }
+        
+        .huage_li {
+            padding-top: 20px;
+            color: #323e48;
+            font-size: 22px;
+            list-style: none;
+        }
+    </style>
+
+    <link rel="preload" href="../static/css/vendors.app.css?v=21b6433" as="style">
+    <link rel="stylesheet" href="../static/css/vendors.app.css">
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="stylesheet" href="../static/css/app.css">
+    <link rel="stylesheet" href="../static/css/1.css">
+    <link rel="stylesheet" href="../static/css/61.css">
+    <link rel="stylesheet" href="../static/css/courseDetail.css">
+</head>
+
+<body data-spy="scroll" data-target="#mubiao" data-offset="0">
+    <div data-server-rendered="true" id="__nuxt">
+        <!---->
+        <div id="__layout">
+            <div id="page-main" style="margin-top:10px">
+                <div id="top_banner" data-v-7e6e90a2>
+                    <!---->
+                </div>
+                <div th:insert="~{public :: public_top}"></div>
+                <div class="courseDetailContainer">
+                    <div>
+                        <div class="module-block module-20071">
+                            <div class="bannerBg">
+                                <div class="bannerContainer moduleConContainerCommonStyle">
+                                    <!-- <div class="bannerLeft"><img
+                                            src="https://cdn.sanjieke.cn/upload/image/1590228505151.png" alt></div>-->
+                                    <!--  <div class="bannerRight">
+                                        <div class="bannerTag">重磅上新</div>
+                                        <p class="bannerP1" th:text="${courseDetail.course.title}">运营新人启航计划</p>
+                                        <p class="bannerP2" th:text="${courseDetail.course.subTitle}">帮助 0-2 岁新人系统提升运营技能
+                                        </p>
+                                        <ul class="bannerUl">
+                                            <!--<li class="bannerLi"><i></i> <span>优秀学员 3+ 次内推企业面试机会，免费获得简历面试课</span></li>
+                                            <li class="bannerLi"><i></i> <span>6 周体系化学习 +1 次项目实战，用作品提升职场竞争力</span></li>
+                                        
+                                    </ul>
+                                </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <!---->
+                    </div>
+                    <div id="diyi" class="diyi"></div>
+                    <div>
+                        <div class="module-block module-20070 moduleSpace">
+                            <div class="module-20070-content1"><span class="innerIcon"></span> <span class="innerTitle sjk_cd_textH1">什么是scratch图形化编程？</span></div>
+                            <!---->
+                        </div>
+                    </div>
+                    <div>
+                        <div class="module-block module-20047 moduleSpace">
+
+                            <div class="imgContentContainer moduleConContainerCommonStyle" th:each="obj:${courseDetail.coursePurpose}">
+                                <!--<tr th:each="user:${userlist}"></tr>-->
+                                <div class="imgContentContainer-left">
+                                    <img th:src="${obj.photo}==null ? 'img/favicon.png' : 'course/loadCourseImg?uuid='+${obj.photo}" />
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--
+                    <div>
+                        <div class="module-block module-20047 moduleSpace">
+                            <div class="imgContentContainer moduleConContainerCommonStyle">
+                                <div class="imgContentContainer-left">
+                                    <img
+                                        th:src="${courseDetail.coursePurpose}==null ? 'img/favicon.png' : 'course/loadCourseImg?uuid='+${courseDetail.coursePurpose.photo}" />
+                                </div>
+                                <div class="imgContentContainer-right">
+                                    <h1 class="contentTitle sjk_cd_moduleInnerTitle"
+                                        th:text="${courseDetail.coursePurpose!=null?courseDetail.coursePurpose.title:'华哥威武华哥威武华哥威武'}">
+                                    </h1>
+                                    <p class="contentP sjk_cd_mainText1">
+                                    <div><br></div>
+                                    <div class="coursePurposeContent"
+                                        th:text="${courseDetail.coursePurpose!=null?courseDetail.coursePurpose.content:'华哥威武华哥威武华哥威武？华哥威武华哥威武华哥威武'}">
+                                        华哥威武华哥威武华哥威武：</div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                    <div id="dier" class="diyi"></div>
+                    <div>
+                        <div class="module-block module-20045 moduleSpace">
+                            <div class="module-20045-content1 module-20045-marginBottom">
+                                <span class="innerIcon"></span>
+                                <span class="innerTitle sjk_cd_textH1">这门课程适合谁?</span>
+                            </div>
+                            <div class="module-20045-content2">
+                                <span class="innerTitle sjk_cd_textH2">7-16岁的青少年，缺乏逻辑，理科成绩偏弱</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img th:src="'/static/img/333image.png'" />
+                    </div>
+
+
+
+                    <div>
+                        <div class="module-block module-20084 moduleSpace">
+                            <!--<a href="javascript:void(0);" class="serviceButton">你的孩子适合学这门课程吗？</a>-->
+                            <a href="javascript:void(0);" class="serviceButton" οnclick="openwin()">你的孩子适合学这门课程吗？</a>
+                            <!--<div class="consultantCodePopup_mark">
+                                <div class="consultantCodePopup"><span class="consultantCodePopup-close"></span>
+                                    <p class="consultantCodePopup-p1">了解详细教学服务</p>
+                                    <p class="consultantCodePopup-p2">购课、选课遇到问题？扫码添加学习顾问为你解答！</p> <img src="https://cdn.sanjieke.cn/upload/image/1602840121199.png" alt="" class="consultantCodePopup-img">
+                                    <p class="consultantCodePopup-p3">添加后可直接留言，顾问会在24小时内回复！</p>
+                                    <p class="consultantCodePopup-p3">（节假日期间回复较慢还请谅解）</p>
+                                </div>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                    <div id="disan" class="diyi"></div>
+                    <div>
+                        <div class="module-block module-20045 moduleSpace">
+                            <div class="module-20045-content1 module-20045-marginBottom">
+                                <span class="innerIcon"></span>
+                                <span class="innerTitle sjk_cd_textH1">孩子可以收获什么？</span>
+                            </div>
+                            <!--
+                            <div class="module-20045-content2">
+                                <span class="innerTitle sjk_cd_textH2">在课程中你能收获</span>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                    <div>
+                        <div class="module-block module-20072 moduleSpace">
+                            <div class="courseGetContainer moduleConContainerCommonStyle">
+                                <div class="courseGet1 tripleItem1">
+                                    <div class="itemTop-img">
+                                        <img th:src="'/static/img/444image.png'" alt />
+                                    </div>
+                                </div>
+                                <!---->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="disi" class="diyi"></div>
+                    <div>
+                        <div class="module-block module-20045 moduleSpace">
+                            <div class="module-20045-content1"><span class="innerIcon"></span> <span class="innerTitle sjk_cd_textH1">课程内容<br></span>
+                                <li class="huage_li"><span>结合教案内容的教学，等你在课程中解锁</span></li>
+                                <img class="neirong" th:src="'/static/img/555image.png'" />
+                                <img class="neirong" th:src="'/static/img/666image.png'" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+
+                        <div class="module-block module-20054 moduleSpace">
+                            <div class="courseOutlineContainer moduleConContainerCommonStyle">
+                                <div class="outlineListContainer" th:each="obj,iterStat:${courseDetail.courseOutlineList}">
+                                    <div class="outlineTitle">
+                                        <span class="titleCon1 sjk_cd_moduleInnerTitleThin" th:text="${obj.courseIndex}">华哥威武</span>
+                                        <span class="titleCon2 sjk_cd_moduleInnerTitleThin" th:text="${obj.title}">华哥威武</span>
+                                        <span class="titleIcon"></span>
+                                    </div>
+                                    <!---->
+                                    <div class="outlineContent">
+                                        <div class="outlineLeft" th:text="${obj.content}">
+                                            1. 了解商业产品，完成商业产品三要素能力训练
+                                            <br>2. 华哥威武
+                                            <br>3. 华哥威武
+                                            <br>4. 华哥威武
+                                            <br>5. 华哥威武
+                                            <br>6. 华哥威武
+                                            <br>7. 华哥威武
+                                            <br>8. 华哥威武
+                                            <br>9. 华哥威武
+                                        </div>
+                                        <!---->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div class="module-block module-20084 moduleSpace">
+                            <!--<a href="javascript:void(0);" class="serviceButton">了解详细课程内容</a>-->
+                            <a href="#myPopup1" data-rel="popup" class="serviceButton" data-position-to="window">了解详细课程内容</a>
+
+                        </div>
+                        <!---->
+                    </div>
+                    <div id="diwu" class="diyi"></div>
+                    <div>
+                        <div class="module-block module-20045 moduleSpace">
+                            <div class="module-20045-content1 module-20045-marginBottom"><span class="innerIcon"></span>
+                                <span class="innerTitle sjk_cd_textH1">线下教师代表</span></div>
+                            <div class="module-20045-content2"><span class="innerTitle sjk_cd_textH2">强大师资力量，手把手助你成为编程超级新星</span></div>
+                        </div>
+                    </div>
+
+                    <div th:each="obj,iterStat:${courseDetail.courseTeacherList}">
+                        <div class="module-block module-20053 moduleSpace">
+                            <div class="module20053bg">
+                                <div class="introTeacherContainer moduleConContainerCommonStyle">
+                                    <div class="introTeacherContainerPc">
+                                        <div class="teacherAvator">
+                                            <img th:src="${obj.photo}==null ? 'img/favicon.png' : 'course/loadCourseImg?uuid='+${obj.photo}" />
+                                        </div>
+                                        <div class="teacherDetail">
+                                            <!--                                        <div class="teacherDetail-top">-->
+                                            <!--                                            <div class="bookImage">-->
+                                            <!--                                                <img src="//img.sanjieke.cn/online_class/bookintro.png" alt/>-->
+                                            <!--                                            </div>-->
+                                            <!--                                            <div class="bookIntro">-->
+                                            <!--                                                <span class="bookIntro-con1 sjk_cd_moduleInnerTitleThin">黄有璨著作《运营之光》</span>-->
+                                            <!--                                                <span class="bookIntro-con2 sjk_cd_mainText1">2016 年度豆瓣「十大商业经管类书籍」中唯一一本工作技能类入选书籍</span>-->
+                                            <!--                                            </div>-->
+                                            <!--                                        </div>-->
+                                            <div class="teacherDetail-bottom">
+                                                <div class="teacherName sjk_cd_moduleInnerTitleEmphasis" th:text="'课程导师 - '+${obj.name}"></div>
+                                                <div class="teacherTitle sjk_cd_mainText1" th:text="${obj.profession}">创造力星球联合创始人；创造力星球运营品类导师，学员遍布 BAT、TMD 等各大互联网公司
+                                                </div>
+                                                <div class="teacherCon sjk_cd_mainText2" th:text="${obj.content}">· 曾任职美国 About.com、第九课堂、新浪微米、周伯通招聘 · 创业黑马高管营导师、小饭桌创业课堂创业导师 · 36 氪、网易、知乎专栏作者
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="introTeacherContainerMobile">
+                                        <div class="teacherName sjk_cd_moduleInnerTitleThin" th:text="'课程导师 - '+${obj.name}">课程导师 - 赵与楠</div>
+                                        <div class="teacherContainerCenter">
+                                            <div class="teacherAvator">
+                                                <img th:src="${obj.photo}==null ? 'img/favicon.png' : 'course/loadCourseImg?uuid='+${obj.photo}" />
+                                            </div>
+                                            <div class="teacherTitle sjk_cd_mainText1" th:text="${obj.profession}">创造力星球联合创始人；创造力星球运营品类导师，学员遍布 BAT、TMD 等各大互联网公司
+                                            </div>
+                                        </div>
+                                        <div class="teacherCon sjk_cd_mainText2" th:text="${obj.content}">· 曾任职美国 About.com、第九课堂、新浪微米、周伯通招聘 · 创业黑马高管营导师、小饭桌创业课堂创业导师 · 36 氪、网易、知乎专栏作者
+                                        </div>
+                                        <!--                                    <div class="bookDetail">-->
+                                        <!--                                        <div class="bookImage"><img src="//img.sanjieke.cn/online_class/bookintro.png"-->
+                                        <!--                                                                    alt></div>-->
+                                        <!--                                        <div class="bookIntro"><span class="bookIntro-con1">黄有璨著作《运营之光》</span> <span-->
+                                        <!--                                                class="bookIntro-con2">2016 年度豆瓣「十大商业经管类书籍」中唯一一本工作技能类入选书籍</span></div>-->
+                                        <!--                                    </div>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div id="diliu" class="diyi"></div>
+                    <div>
+                        <div class="module-block moduleSpace module-20043">
+                            <div class="module-20043-content"><span class="innerIcon"></span> <span class="innerTitle sjk_cd_textH1">学员学习效果</span></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="module-block module-20073 moduleSpace">
+                            <div class="titleImgContainer moduleConContainerCommonStyle">
+                                <p class="titleImgContainer-title sjk_cd_moduleInnerTitle">更多实战案例，等你在课程中解锁！</p>
+                                <div class="imgContainer">
+                                    <div class="titleImgItem" th:each="obj,iterStat:${courseDetail.courseCaseList}">
+                                        <div class="img">
+                                            <img th:src="${obj.img}==null ? 'img/favicon.png' : 'course/loadCourseImg?uuid='+${obj.img}" />
+                                        </div>
+                                        <p class="title sjk_cd_moduleInnerTitleThin" th:text="${obj.title}">拼多多爆款转化型文案拆解
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="diqi" class="diyi"></div>
+                    <div>
+                        <div class="module-block moduleSpace module-20043">
+                            <div class="module-20043-content">
+                                <span class="innerIcon"></span>
+                                <span class="innerTitle sjk_cd_textH1">线下教学服务模式</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="module-block module-20074 moduleSpace">
+                            <div class="serviceContainer moduleConContainerCommonStyle">
+                                <p class="serviceTitle sjk_cd_moduleInnerTitle">全面升级的线下教学模式+学习效果+服务保障</p>
+                                <img class="neirong" th:src="'/static/img/999image.png'" />
+                                <img class="neirong" th:src="'/static/img/101010image.png'" />
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="module-block module-20084 moduleSpace"><a href="javascript:void(0);" class="serviceButton">了解详细教学服务</a>
+                            <!---->
+                        </div>
+                    </div>
+                    <div id="diba" class="diyi"></div>
+                    <div>
+                        <div class="module-block module-20045 moduleSpace">
+                            <div class="module-20045-content1">
+                                <span class="innerIcon"></span>
+                                <span class="innerTitle sjk_cd_textH1">家长反馈</span>
+                            </div>
+                            <!---->
+                        </div>
+                    </div>
+
+                    <div class="imgItem">
+                        <img class="neirong" th:src="'/static/img/111111image.png'" />
+                    </div>
+                    <!--
+                    <div>
+                        <div class="module-block module-20065 moduleSpace">
+                            <div class="titleImgContainer moduleConContainerCommonStyle">
+                                <p class="titleImgContainer-title sjk_cd_moduleInnerTitle"></p>
+                                <div class="imgContainer doubleImg">
+                                    <div class="imgItem">
+                                        <img class="neirong" th:src="'/static/img/111111image.png'" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                    <div id="dijiu" class="diyi"></div>
+                    <div>
+                        <div class="module-block moduleSpace module-20043">
+                            <div class="module-20043-content"><span class="innerIcon"></span> <span class="innerTitle sjk_cd_textH1">7 天无条件退款</span></div>
+                        </div>
+                    </div>
+
+                    <div class="imgContentContainer-right">
+                        <img class="neirong" th:src="'/static/img/121212image.png'" />
+                    </div>
+                    <!--
+                    <div>
+                        <div class="module-block module-20076 moduleSpace">
+                            <div class="imgContentContainer moduleConContainerCommonStyle">
+                                <div class="imgContentContainer-right">
+                                    <img class="neirong" th:src="'/static/img/121212image.png'" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+-->
+
+                    <div id="dishi" class="diyi"></div>
+                    <div>
+                        <div class="module-block moduleSpace module-20043">
+                            <div class="module-20043-content"><span class="innerIcon"></span> <span class="innerTitle sjk_cd_textH1">合作伙伴</span></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="module-block module-20055 moduleSpace">
+                            <div class="companyContainer moduleConContainerCommonStyle">
+                                <img class="neirong" th:src="'/static/img/131313image.png'" />
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <!--
+                        <div class="module-block module-20058" style="display:none;">
+                            <div class="container20058 moduleConContainerCommonStyle">
+                                <div class="container20058Inner">
+                                    <div class="fixedMenuContainer">
+                                        <div class="menuList"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+-->
+
+
+
+                    <div>
+                        <div class="module-block module-20058">
+                            <div class="container20058 moduleConContainerCommonStyle">
+                                <div class="container20058Inner">
+                                    <div class="fixedMenuContainer">
+                                        <div class="menuList" id="mubiao">
+                                            <ul class="nav nav-pills nav-stacked">
+                                                <li><a class="listLi" href="#diyi">scratch图形化编程</a></li>
+                                                <li><a class="listLi" href="#dier">这门课程适合谁？</a></li>
+                                                <li><a class="listLi" href="#disan">孩子可以收获什么？</a></li>
+                                                <li><a class="listLi" href="#disi">课程内容</a></li>
+                                                <li><a class="listLi" href="#diwu">线下教师代表</a></li>
+                                                <li><a class="listLi" href="#diliu">学员学习效果</a></li>
+                                                <li><a class="listLi" href="#diqi">线下教学服务模式</a></li>
+                                                <li><a class="listLi" href="#diba">家长反馈</a></li>
+                                                <li><a class="listLi" href="#dijiu">7天无条件退款</a></li>
+                                                <li><a class="listLi" href="#dishi">合作伙伴</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="module-block module-20078 moduleSpace">
+                            <div class="dakeBottomBg">
+                                <div class="dakeBottomContainer moduleConContainerCommonStyle">
+                                    <div class="dakeBottomContainer-left">
+                                        <p class="dakeBottomContainer-left-p">
+                                            现在行动，迈向名企运营岗位的第一步</p>
+                                        <ul class="dakeBottomContainer-left-ul">
+                                            <li class="dakeBottomContainer-left-li"><i></i> <span class="dakeBottomContainer-left-span">名企内推</span></li>
+                                            <li class="dakeBottomContainer-left-li"><i></i> <span class="dakeBottomContainer-left-span">高含金量实战</span></li>
+                                            <li class="dakeBottomContainer-left-li"><i></i> <span class="dakeBottomContainer-left-span">6 周掌握核心能力</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dakeBottomContainer-right"><img th:src="'/static/img/xxxxx.jpg'" alt></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                </div>
+                <div th:insert="~{public :: public_footer}"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

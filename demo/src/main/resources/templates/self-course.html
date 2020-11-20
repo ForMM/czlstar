@@ -1,0 +1,72 @@
+<!doctype html>
+<html data-n-head-ssr xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>创造力星球-专注于少儿编程</title>
+    <meta data-n-head="ssr" charset="utf-8">
+    <meta data-n-head="ssr" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta data-n-head="ssr" http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta data-n-head="ssr" data-hid="description" name="description" content="创造力星球-专注于少儿编程">
+    <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="创造力星球-专注于少儿编程">
+    <link data-n-head="ssr" rel="icon" type="image/x-icon" href="//img.sanjieke.cn/common/favicon.ico">
+
+    <link href="../static/nava/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/nava/css/scrolling-nav.css" rel="stylesheet">
+    <script src="../static/nava/vendor/jquery/jquery.min.js"></script>
+    <script src="../static/nava/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../static/nava/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../static/nava/js/scrolling-nav.js"></script>
+
+    <link rel="preload" href="../static/css/vendors.app.css?v=21b6433" as="style">
+    <link rel="stylesheet" href="../static/css/vendors.app.css">
+    <link rel="stylesheet" href="../static/css/home.css">
+
+    <link rel="stylesheet" href="../static/css/app.css?v=a5b1cf5">
+    <link rel="stylesheet" href="../static/css/self-course.css">
+
+</head>
+
+<body>
+    <div data-server-rendered="true" id="__nuxt">
+        <!---->
+        <div id="__layout">
+            <div id="page-main" style="margin-top:90px">
+                <div th:insert="~{public :: public_top}"></div>
+                <div id="self-study-course" data-v-29d7523e>
+                    <div class="self-study-course-banner" data-v-29d7523e>
+                        <div class="self-study-course-banner-inner" data-v-29d7523e th:style="'background:url(' + @{(${imgpaths}=='' ? 'img/favicon.png' : 'home/loadCarouseImg?uuid='+${imgpaths})} + ') no-repeat 50%'">
+                        </div>
+                    </div>
+
+                    <div class="self-study-course-main" data-v-29d7523e>
+                        <ul class="self-study-course-list" data-v-29d7523e>
+                            <a th:each="obj,iterStat:${homeCourseVo.coreCourses}" th:href="'self-course-detail?id='+${obj.id}" th:title="${obj.title}" target="_blank" data-v-29d7523e>
+                                <li data-v-29d7523e>
+                                    <div class="self-study-course-pic web" data-v-29d7523e>
+                                        <img th:src="${obj.img}=='' ? 'img/favicon.png' : 'course/loadCourseImg?uuid='+${obj.img}" th:alt="${obj.title}" class="index-free-course_card_bg_img" data-v-29d7523e>
+                                    </div>
+                                    <div class="self-study-course-pic mobile" style="background:url('https://cdn.sanjieke.cn/upload/image/158900871918.png') no-repeat center center;background-size:cover;" data-v-29d7523e>
+                                    </div>
+                                    <div class="self-study-course-info" data-v-29d7523e>
+                                        <div class="self-study-course-title" data-v-29d7523e th:text="${obj.title}"></div>
+                                        <div class="self-study-course-subtitle" data-v-29d7523e th:text="${obj.subTitle}"></div>
+                                        <div class="self-study-course-introduce" data-v-29d7523e>
+                                            <span class="self-study-course-price" data-v-29d7523e>¥<i data-v-29d7523e th:text="${obj.price}"></i></span>
+                                            <span class="self-study-course-number" data-v-29d7523e>1164000000人学过</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                    <!---->
+                </div>
+                <!-- <div th:insert="~{public :: public_footer}"></div>  -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

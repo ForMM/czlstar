@@ -1,0 +1,484 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport"
+	content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="stylesheet" href="../../static/layui/css/layui.css"
+	media="all">
+<link rel="stylesheet"
+	href="http://localhost:8080/static/css/course.css">
+<title>发布课程</title>
+<script type="text/javascript" src="../../static/layui/layui.js"></script>
+<script type="text/javascript"
+	src="../../static/scripts/jquery-1.11.1.js"></script>
+</head>
+<body>
+
+	<div class="article-div">
+
+		<div class="layui-row">
+			<div class="layui-col-xs6">
+				<fieldset class="layui-elem-field layui-field-title"
+					style="margin-top: 20px;">
+					<legend>添加图片</legend>
+				</fieldset>
+				<div class="layui-form-item">
+					<label class="layui-form-label">目标图片111</label>
+					<div class="layui-upload">
+						<input hidden id="id" name="id">
+						<button type="button" class="layui-btn" id="coursePurpose">上传图片</button>
+						<div class="layui-upload-list">
+							<img class="layui-upload-img" id="coursePurposeDemo" width="300">
+						</div>
+					</div>
+				</div>
+				<div class="layui-form-item">
+						<div class="layui-input-block">
+							<button class="layui-btn" lay-submit
+								lay-filter="formCoursePurpose">提交</button>
+							<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+						</div>
+					</div>
+			</div>
+		</div>
+
+		<div class="layui-row">
+			<div class="layui-col-xs6">
+				<fieldset class="layui-elem-field layui-field-title"
+					style="margin-top: 20px;">
+					<legend>学习目标</legend>
+				</fieldset>
+				<form class="layui-form" action="">
+					<input hidden name="courseId" th:value="${courseId}">
+					<div class="layui-form-item">
+						<label class="layui-form-label">标题</label>
+						<div class="layui-input-block">
+							<input type="text" name="name" required lay-verify="required"
+								placeholder="请输入标题" autocomplete="off" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">子标题</label>
+						<div class="layui-input-block">
+							<input type="text" name="title" required lay-verify="required"
+								placeholder="请输入子标题" autocomplete="off" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item layui-form-text">
+						<label class="layui-form-label">目标描述</label>
+						<div class="layui-input-block">
+							<textarea name="content" placeholder="请输入内容"
+								class="layui-textarea"></textarea>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">目标图片</label>
+						<div class="layui-upload">
+							<input hidden id="imguuid" name="uuid">
+							<button type="button" class="layui-btn" id="coursePurpose">上传图片</button>
+							<div class="layui-upload-list">
+								<img class="layui-upload-img" id="coursePurposeDemo" width="300">
+							</div>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<div class="layui-input-block">
+							<button class="layui-btn" lay-submit
+								lay-filter="formCoursePurpose">提交</button>
+							<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="layui-col-xs6">
+				<fieldset class="layui-elem-field layui-field-title"
+					style="margin-top: 20px;">
+					<legend>学习对象</legend>
+				</fieldset>
+				<form class="layui-form" action="">
+					<input hidden name="courseId" th:value="${courseId}">
+					<div class="layui-form-item">
+						<label class="layui-form-label">课程对象</label>
+						<div class="layui-input-block">
+							<input type="text" name="courseObject" required
+								lay-verify="required" placeholder="请输入课程对象" autocomplete="off"
+								class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item layui-form-text">
+						<label class="layui-form-label">对象描述</label>
+						<div class="layui-input-block">
+							<textarea placeholder="请输入内容" name="content"
+								class="layui-textarea"></textarea>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<div class="layui-input-block">
+							<button class="layui-btn" lay-submit
+								lay-filter="formCourseObject">提交</button>
+							<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="layui-row">
+			<div class="layui-col-xs6">
+				<fieldset class="layui-elem-field layui-field-title"
+					style="margin-top: 20px;">
+					<legend>学习收获</legend>
+				</fieldset>
+				<form class="layui-form" action="">
+					<input hidden name="courseId" th:value="${courseId}">
+					<!--                <div class="layui-form-item">-->
+					<!--                    <label class="layui-form-label">标题</label>-->
+					<!--                    <div class="layui-input-block">-->
+					<!--                        <input type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">-->
+					<!--                    </div>-->
+					<!--                </div>-->
+					<!--                <div class="layui-form-item">-->
+					<!--                    <label class="layui-form-label">子标题</label>-->
+					<!--                    <div class="layui-input-block">-->
+					<!--                        <input type="text" name="subTitle" required  lay-verify="required" placeholder="请输入子标题" autocomplete="off" class="layui-input">-->
+					<!--                    </div>-->
+					<!--                </div>-->
+					<div class="layui-form-item">
+						<label class="layui-form-label">课程收获</label>
+						<div class="layui-input-block">
+							<input type="text" name="courseObject" required
+								lay-verify="required" placeholder="请输入课程收获" autocomplete="off"
+								class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item layui-form-text">
+						<label class="layui-form-label">收获描述</label>
+						<div class="layui-input-block">
+							<textarea placeholder="请输入内容" name="content"
+								class="layui-textarea"></textarea>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<div class="layui-input-block">
+							<button class="layui-btn" lay-submit
+								lay-filter="formCourseHarvest">提交</button>
+							<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="layui-col-xs6">
+				<fieldset class="layui-elem-field layui-field-title"
+					style="margin-top: 20px;">
+					<legend>课程大纲</legend>
+				</fieldset>
+				<form class="layui-form" action="">
+					<input hidden name="courseId" th:value="${courseId}">
+					<div class="layui-form-item">
+						<label class="layui-form-label">大纲索引</label>
+						<div class="layui-input-block">
+							<input type="text" name="courseIndex" required
+								lay-verify="required" placeholder="请输入标题" autocomplete="off"
+								class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">大纲标题</label>
+						<div class="layui-input-block">
+							<input type="text" name="title" required lay-verify="required"
+								placeholder="请输入子标题" autocomplete="off" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item layui-form-text">
+						<label class="layui-form-label">大纲描述</label>
+						<div class="layui-input-block">
+							<textarea placeholder="请输入内容" name="content"
+								class="layui-textarea"></textarea>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<div class="layui-input-block">
+							<button class="layui-btn" lay-submit
+								lay-filter="formCourseOutline">提交</button>
+							<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+
+
+		<div class="layui-row">
+			<div class="layui-col-xs6">
+				<fieldset class="layui-elem-field layui-field-title"
+					style="margin-top: 20px;">
+					<legend>课程导师</legend>
+				</fieldset>
+				<form class="layui-form" action="">
+					<input hidden name="courseId" th:value="${courseId}">
+					<div class="layui-form-item">
+						<label class="layui-form-label">名称</label>
+						<div class="layui-input-block">
+							<input type="text" name="name" required lay-verify="required"
+								placeholder="请输入标题" autocomplete="off" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">职业</label>
+						<div class="layui-input-block">
+							<input type="text" name="profession" required
+								lay-verify="required" placeholder="请输入标题" autocomplete="off"
+								class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item layui-form-text">
+						<label class="layui-form-label">个人描述</label>
+						<div class="layui-input-block">
+							<textarea placeholder="请输入内容" name="content"
+								class="layui-textarea"></textarea>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">导师照片</label>
+						<div class="layui-upload">
+							<input hidden id="cpurseTeacheruuid" name="photo">
+							<button type="button" class="layui-btn" id="courseTeacher">上传图片</button>
+							<div class="layui-upload-list">
+								<img class="layui-upload-img" width="300" id="courseTeacherDemo">
+							</div>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<div class="layui-input-block">
+							<button class="layui-btn" lay-submit
+								lay-filter="formCourseTeacher">提交</button>
+							<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="layui-col-xs6">
+				<fieldset class="layui-elem-field layui-field-title"
+					style="margin-top: 20px;">
+					<legend>课程案例</legend>
+				</fieldset>
+				<form class="layui-form" action="">
+					<input hidden name="courseId" th:value="${courseId}">
+					<div class="layui-form-item">
+						<label class="layui-form-label">标题</label>
+						<div class="layui-input-block">
+							<input type="text" name="title" required lay-verify="required"
+								placeholder="请输入标题" autocomplete="off" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">案例图片</label>
+						<div class="layui-upload">
+							<input hidden id="caseuuid" name="uuid">
+							<button type="button" class="layui-btn" id="courseCase">上传图片</button>
+							<div class="layui-upload-list">
+								<img class="layui-upload-img" width="300" id="courseCaseDemo">
+								<p id="demoText"></p>
+							</div>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<div class="layui-input-block">
+							<button class="layui-btn" lay-submit lay-filter="formCourseCase">提交</button>
+							<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+
+	</div>
+
+
+
+	<script>
+		//Demo
+
+		layui.use('upload', function() {
+			var upload = layui.upload;
+
+			//执行实例
+			var uploadInst1 = upload.render({
+				elem : '#coursePurpose' //绑定元素
+				,
+				url : 'uploadCourseImg' //上传接口
+				,
+				done : function(res) {
+					//上传完毕回调
+					console.log(res);
+					console.log(res.code);
+					console.log(res.data);
+					$("#coursePurposeDemo").attr("src",
+							"loadCourseImg?uuid=" + res.data);
+					$("#imguuid").val(res.data);
+				},
+				error : function() {
+					//请求异常回调
+					layer.msg("上传课程图片失败！");
+				}
+			});
+
+			var uploadInst2 = upload.render({
+				elem : '#courseCase' //绑定元素
+				,
+				url : 'uploadCourseImg' //上传接口
+				,
+				done : function(res) {
+					//上传完毕回调
+					console.log(res);
+					console.log(res.code);
+					console.log(res.data);
+					$("#courseCaseDemo").attr("src",
+							"loadCourseImg?uuid=" + res.data);
+					$("#caseuuid").val(res.data);
+				},
+				error : function() {
+					//请求异常回调
+					layer.msg("上传课程图片失败！");
+				}
+			});
+
+			var uploadInst3 = upload.render({
+				elem : '#courseTeacher' //绑定元素
+				,
+				url : 'uploadCourseImg' //上传接口
+				,
+				done : function(res) {
+					//上传完毕回调
+					console.log(res);
+					console.log(res.code);
+					console.log(res.data);
+					$("#courseTeacherDemo").attr("src",
+							"loadCourseImg?uuid=" + res.data);
+					$("#cpurseTeacheruuid").val(res.data);
+				},
+				error : function() {
+					//请求异常回调
+					layer.msg("上传课程图片失败！");
+				}
+			});
+
+		});
+
+		layui.use('form', function() {
+			var form = layui.form;
+
+			//监听提交
+			form.on('submit(formCoursePurpose)', function(data) {
+				// layer.msg(JSON.stringify(data.field));
+				$.ajax({
+					type : "POST",
+					url : "addCoursePurpose",
+					data : data.field,
+					dataType : "JSON",
+					success : function(res) {
+						console.log(res);
+						if (res.code == 1) {
+							layer.msg("操作成功");
+						}
+					}
+				});
+				return false;
+			});
+
+			form.on('submit(formCourseObject)', function(data) {
+				// layer.msg(JSON.stringify(data.field));
+				$.ajax({
+					type : "POST",
+					url : "addCourseObject",
+					data : data.field,
+					dataType : "JSON",
+					success : function(res) {
+						console.log(res);
+						if (res.code == 1) {
+							layer.msg("操作成功");
+						}
+					}
+				});
+				return false;
+			});
+
+			form.on('submit(formCourseHarvest)', function(data) {
+				// layer.msg(JSON.stringify(data.field));
+				$.ajax({
+					type : "POST",
+					url : "addCourseHarvest",
+					data : data.field,
+					dataType : "JSON",
+					success : function(res) {
+						console.log(res);
+						if (res.code == 1) {
+							layer.msg("操作成功");
+						}
+					}
+				});
+				return false;
+			});
+
+			form.on('submit(formCourseOutline)', function(data) {
+				// layer.msg(JSON.stringify(data.field));
+				$.ajax({
+					type : "POST",
+					url : "addCourseOutline",
+					data : data.field,
+					dataType : "JSON",
+					success : function(res) {
+						console.log(res);
+						if (res.code == 1) {
+							layer.msg("操作成功");
+						}
+					}
+				});
+				return false;
+			});
+
+			form.on('submit(formCourseTeacher)', function(data) {
+				// layer.msg(JSON.stringify(data.field));
+				$.ajax({
+					type : "POST",
+					url : "addCourseTeacher",
+					data : data.field,
+					dataType : "JSON",
+					success : function(res) {
+						console.log(res);
+						if (res.code == 1) {
+							layer.msg("操作成功");
+						}
+					}
+				});
+				return false;
+			});
+
+			form.on('submit(formCourseCase)', function(data) {
+				// layer.msg(JSON.stringify(data.field));
+				$.ajax({
+					type : "POST",
+					url : "addCourseCase",
+					data : data.field,
+					dataType : "JSON",
+					success : function(res) {
+						console.log(res);
+						if (res.code == 1) {
+							layer.msg("操作成功");
+						}
+					}
+				});
+				return false;
+			});
+
+		});
+	</script>
+
+</body>
+</html>

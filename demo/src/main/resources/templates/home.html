@@ -1,0 +1,531 @@
+<!doctype html>
+<html data-n-head-ssr xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>创造力星球-专注于少儿编程</title>
+    <meta data-n-head="ssr" charset="utf-8">
+    <meta data-n-head="ssr" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta data-n-head="ssr" http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta data-n-head="ssr" data-hid="description" name="description" content="创造力星球-专注于少儿编程">
+    <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="创造力星球-专注于少儿编程">
+    <link data-n-head="ssr" rel="icon" type="image/x-icon" href="//img.sanjieke.cn/common/favicon.ico">
+    <link rel="stylesheet" href="../static/css/swiper-bundle.min.css">
+
+
+
+    <link href="../static/nava/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/nava/css/scrolling-nav.css" rel="stylesheet">
+    <script src="../static/nava/vendor/jquery/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="../static/nava/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../static/nava/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../static/nava/js/scrolling-nav.js"></script>
+
+    <link rel="preload" href="../static/css/vendors.app.css?v=21b6433" as="style">
+    <link rel="stylesheet" href="../static/css/vendors.app.css">
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="stylesheet" href="../static/layui/css/layui.css" media="all">
+
+
+    <style>
+        /* Make the image fully responsive */
+        
+        body {
+            background: #fff;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .swiper-container {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: #fbe7fb;
+        }
+        
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+        }
+        
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .maodian {
+            height: 80px;
+        }
+        
+        .layui-nav .layui-nav-item {
+            width: 33%;
+            text-align: center;
+            vertical-align: text-top;
+        }
+        
+        .layui-nav .huage_a {
+            font-size: 18px;
+        }
+        /* .layui-nav里的.layui-nav-item里的a标签样式 一层层地选择 */
+        
+        .layui-nav .layui-nav-item a:hover {
+            color: #000;
+            background-color: #4CAF50;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <script src="//code.tidio.co/szureun5buousz5t4ohd6iqtm0pjdvsg.js" async></script>
+    <div data-server-rendered="true" id="__nuxt">
+        <!---->
+        <div id="__layout">
+            <div id="page-main" style="margin-top: 90px">
+                <div th:insert="~{public :: public_top}"></div>
+                <div id="index" data-v-efa69a38>
+                    <img src="/static/img/logo.jpg" style="position: absolute; top: 0; left: -1000px;" data-v-efa69a38>
+                    <div class="category_nav" data-v-efa69a38>
+                        <div class="slogan">
+                            <div class="slogan-info">创造力星球·优质的线下教育培训机构</div>
+                            <div style="width:100px;float:right;"><a href="#4" class="self-study-introduce-more" data-v-bf90c2f4>师资介绍</a></div>
+                            <ul class="beishu-info">
+                                <li>20000+学生认可</li>
+                                <li>985、211师资团队</li>
+                                <li>体系化+实践性课程内容</li>
+                            </ul>
+                        </div>
+                        <div class="cn_container" th:style="${isMobile}?'height: 150px;margin: 0 0%'">
+                            <div class="cn_right_container">
+                                <div class="cn_banner_container">
+                                    <!---->
+
+
+                                    <div id="demo" class="carousel slide" data-ride="carousel">
+
+                                        <!-- 轮播图片 -->
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item" th:each="obj,iterStat:${imgpaths}" th:class="${iterStat.index}==0?'carousel-item active':'carousel-item'">
+                                                <img th:src="${obj}==''?'img/favicon.png':'home/loadCarouseImg?uuid='+${obj}" />
+                                            </div>
+                                        </div>
+
+                                        <!-- 左右切换按钮 -->
+                                        <a class="carousel-control-prev" href="#demo" data-slide="prev"> <span class="carousel-control-prev-icon"></span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#demo" data-slide="next"> <span class="carousel-control-next-icon"></span>
+                                        </a>
+
+                                    </div>
+
+
+
+
+
+
+                                    <!--                                <div class="layui-carousel" id="test1">-->
+                                    <!--                                    <div carousel-item>-->
+                                    <!--                                        <div th:each="obj,iterStat:${imgpaths}"-->
+                                    <!--                                             th:style="'background:url(' + @{(${obj}=='' ? 'img/favicon.png' : 'home/loadCarouseImg?uuid='+${obj})} + ') 0 0 no-repeat ;background-size: 100% 100%;'">-->
+                                    <!--                                            &lt;!&ndash;                                             th:attr="${obj}=='' ? 'img/favicon.png' : 'home/loadCarouseImg?uuid='+${obj}">&ndash;&gt;-->
+
+                                    <!--                                        </div>-->
+                                    <!--                                    </div>-->
+                                    <!--                                </div>-->
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                    </div>
+                    <!---->
+                    <!--
+					<ul class="layui-nav">
+						<li class="layui-nav-item1">年级</li>
+						<li class="layui-nav-item"><a class="huage_a" href="#home">小班</a></li>
+						<li class="layui-nav-item"><a class="huage_a" href="#news">中班</a></li>
+						<li class="layui-nav-item"><a class="huage_a" href="#contact">大班</a></li>
+						<li class="layui-nav-item"><a class="huage_a" href="#about">一年级</a></li>
+						<li class="layui-nav-item"><a class="huage_a" href="#home">二年级</a></li>
+						<li class="layui-nav-item"><a class="huage_a" href="#news">三年级</a></li>
+						<li class="layui-nav-item"><a class="huage_a" href="#contact">四年级</a></li>
+						<li class="layui-nav-item"><a class="huage_a" href="#about">五年级</a></li>
+						<li class="layui-nav-item"><a class="huage_a" href="#home">六年级</a></li>
+						<li class="layui-nav-item"><a class="huage_a" href="#news">预初</a></li>
+						<li class="layui-nav-item"><a class="huage_a" href="#contact">初一</a></li>
+						<li class="layui-nav-item"><a class="huage_a" href="#about">初二</a></li>
+						<li class="layui-nav-item"><a class="huage_a" href="#home">初三</a></li>
+					</ul>	-->
+
+                    <ul class="layui-nav">
+                        <li class="layui-nav-item"><a class="huage_a" href="#1">幼儿园课程</a></li>
+                        <li class="layui-nav-item"><a class="huage_a" href="#2">小学课程</a></li>
+                        <li class="layui-nav-item"><a class="huage_a" href="#3">初中课程</a></li>
+                    </ul>
+
+                    <!-- 第一个 -->
+                    <div class="maodian">
+                        <a id="1"></a>
+                        <!--锚点用的-->
+                    </div>
+                    <div class="index-title " th:class="${isMobile}==true?'index-title index-title-m':'index-title '" data-v-efa69a38>
+                        <span class="index-title_icon" data-v-efa69a38></span>
+                        <p class="index-title_p1" data-v-efa69a38>核心课程</p>
+                        <p class="index-title_p2" data-v-efa69a38>更加科学、完善、有效的逻辑思维培养，提升升学、学校申请的竞争力</p>
+                        <a href="self-course?type=1" name="index_pc2.0_xinyonghuxianmian_chakangengduo" target="_blank" class="index-title_a" data-v-efa69a38> 更多核心课程
+							<i class="index-title_a_i" data-v-efa69a38></i>
+						</a>
+                    </div>
+
+
+
+                    <div class="course-core-box" data-v-efa69a38>
+                        <div class="course-core-list">
+                            <div class="course-list-info" th:if="${isMobile}">
+                                <div class="list-top">
+                                    <div class="list-info-icon list-info-icon0"></div>
+                                    <div class="list-info-title">值得信赖</div>
+                                </div>
+                                <div class="list-info-desc">幼儿园、小学等学校认可，进驻430课堂</div>
+                            </div>
+
+                            <div class="course-list-info" th:if="${isMobile}">
+                                <div class="list-top">
+                                    <div class="list-info-icon list-info-icon1"></div>
+                                    <div class="list-info-title">名师教学</div>
+                                </div>
+                                <div class="list-info-desc">来自清北的课程研发团队985、211名师线下教学助力孩子提升升学竞争力</div>
+                            </div>
+                            <div class="course-list-info" th:if="${isMobile}">
+                                <div class="list-top">
+                                    <div class="list-info-icon list-info-icon2"></div>
+                                    <div class="list-info-title">线下双师教学·小班辅导</div>
+                                </div>
+                                <div class="list-info-desc">3年+工科专业毕业教师担任助教，6人小班辅导，沉浸式教学让孩子学有所得！</div>
+                            </div>
+                            <div class="course-list-info" th:if="${isMobile}">
+                                <div class="list-top">
+                                    <div class="list-info-icon list-info-icon3"></div>
+                                    <div class="list-info-title">等级考试</div>
+                                </div>
+                                <div class="list-info-desc">学习优秀学生可参加蓝桥杯、青少年等级考试、信奥赛</div>
+                            </div>
+
+
+
+                            <!-- 第二个 -->
+                            <div class="course-list-info" th:if="${not isMobile}">
+                                <div class="list-info-icon list-info-icon0"></div>
+                                <div class="list-info-content list-info-content0">
+                                    <div class="list-info-title">值得信赖</div>
+                                    <div class="list-info-desc">幼儿园、小学等学校认可，</div>
+                                    <div class="list-info-desc">进驻430课堂</div>
+                                </div>
+                            </div>
+                            <div class="course-list-info" th:if="${not isMobile}">
+                                <div class="list-info-icon list-info-icon1"></div>
+                                <div class="list-info-content list-info-content1">
+                                    <div class="list-info-title">名师教学</div>
+                                    <div class="list-info-desc">来自清北的课程研发团队</div>
+                                    <div class="list-info-desc">985、211名师线下教学助力孩子提升升学竞争力</div>
+                                </div>
+                            </div>
+                            <div class="course-list-info" th:if="${not isMobile}">
+                                <div class="list-info-icon list-info-icon2"></div>
+                                <div class="list-info-content list-info-content2">
+                                    <div class="list-info-title">双师教学·小班辅导</div>
+                                    <div class="list-info-desc">3年+工科专业毕业教师担任助教，</div>
+                                    <div class="list-info-desc">6人小班辅导，沉浸式教学让孩子学有所得！</div>
+                                </div>
+                            </div>
+                            <div class="course-list-info" th:if="${not isMobile}">
+                                <div class="list-info-icon list-info-icon3"></div>
+                                <div class="list-info-content list-info-content3">
+                                    <div class="list-info-title">等级考试</div>
+                                    <div class="list-info-desc">学习优秀学生可参加</div>
+                                    <div class="list-info-desc">蓝桥杯、青少年等级考试、信奥赛</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 例如迭代一个userlist集合
+							<tr th:each="obj : ${homeCourseVo.coreCourses}">
+								<td th:text="${user.name}">tyrone</td>
+								<td th:text="${user.age}">18</td>
+							</tr> -->
+                        <!--这个东西有点六，用那个t什么鬼的玩意就能弄好几个东西出来-->
+                        <div class="courses-detail courses-detail-PC">
+                            <a target="_blank" class="detail-info detail-info0" th:each="obj,iterStat:${homeCourseVo.coreCourses}" th:style="'background:url(' + @{(${obj.img}=='' ? 'img/favicon.png' : 'course/loadCourseImg?uuid='+${obj.img})} + ') no-repeat 50%'" th:href="'self-course-detail?id='+${obj.id}">
+                                <div class="interaction-content">
+                                    <div class="class-title" th:text="${obj.title}"></div>
+                                    <div class="bright-spot">
+                                        <div class="about-spot" th:text="${obj.subTitle}"></div>
+                                        <!--                                <div class="about-spot">·优秀学员直推知名互联网公司</div>-->
+                                    </div>
+                                    <i class="interaction-more"></i>
+                                </div>
+                                <!---->
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="maodian">
+                        <a id="2"></a>
+                    </div>
+
+                    <div class="index-title" th:class="${isMobile}==true?'index-title index-title-m':'index-title '" data-v-efa69a38>
+                        <span class="index-title_icon" data-v-efa69a38></span>
+                        <p class="index-title_p1" data-v-efa69a38>精品课程</p>
+                        <p class="index-title_p2" data-v-efa69a38>培养4~7岁孩子动手能力、专注力、逻辑思维能力以及创造力</p>
+                        <a href="self-course?type=2" name="index_pc2.0_xinyonghuxianmian_chakangengduo" target="_blank" class="index-title_a" data-v-efa69a38> 更多精品课程
+							<i class="index-title_a_i" data-v-efa69a38></i>
+						</a>
+                    </div>
+                    <div class="self-study-home-list" data-v-bf90c2f4 data-v-efa69a38>
+                        <!---->
+                        <ul data-v-bf90c2f4 th:if="${isMobile}">
+                            <a href="self-course?type=2" target="blank" class="self-study-yy-title" data-v-bf90c2f4=""></a>
+                            <li data-v-bf90c2f4 th:each="obj,iterStat:${homeCourseVo.excellentCourses}">
+                                <a th:href="'self-course-detail?id='+${obj.id}" th:title="${obj.title}" target="_blank" data-v-bf90c2f4>
+                                    <div class="self-study-course-pic" data-v-bf90c2f4>
+                                        <img th:src="${obj.img}=='' ? 'img/favicon.png' : 'course/loadCourseImg?uuid='+${obj.img}" th:alt="${obj.title}" class="index-free-course_card_bg_img" data-v-bf90c2f4>
+                                    </div>
+                                    <div class="self-study-course-info" data-v-bf90c2f4>
+                                        <div class="self-study-course-title" data-v-bf90c2f4 th:text="${obj.title}">
+                                        </div>
+                                        <div class="self-study-course-subtitle" data-v-bf90c2f4 th:text="${obj.subTitle}"></div>
+                                        <div class="self-study-course-introduce" data-v-bf90c2f4>
+                                            <span class="self-study-course-price" data-v-bf90c2f4>¥<i data-v-bf90c2f4
+													th:text="${obj.price}"></i></span> <span class="self-study-course-number" data-v-bf90c2f4>1164人学过</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <!---->
+                        <ul data-v-bf90c2f4 th:if="${not isMobile}">
+                            <li class="self-study-introduce yy-introduce" data-v-bf90c2f4>
+                                <div data-v-bf90c2f4>
+                                    <h3 data-v-bf90c2f4>Micro:bit硬件编程</h3>
+                                    <p class="self-study-introduce-info" data-v-bf90c2f4>立刻掌握运营、增长、营销的热门技能</p>
+                                    <a href="self-course?type=2" class="self-study-introduce-more" data-v-bf90c2f4>查看更多<i class="more-icon" data-v-bf90c2f4></i>
+									</a>
+                                </div>
+                            </li>
+                            <!--excellentCourses-->
+                            <li data-v-bf90c2f4 th:each="obj,iterStat:${homeCourseVo.pblCourses}">
+                                <a th:href="'self-course-detail1?id='+${obj.id}" th:title="${obj.title}" target="_blank" data-v-bf90c2f4>
+                                    <div class="self-study-course-pic" data-v-bf90c2f4>
+                                        <img th:src="${obj.img}=='' ? 'img/favicon.png' : 'course/loadCourseImg?uuid='+${obj.img}" th:alt="${obj.title}" class="index-free-course_card_bg_img" data-v-bf90c2f4>
+                                    </div>
+                                    <div class="self-study-course-info" data-v-bf90c2f4>
+                                        <div class="self-study-course-title" data-v-bf90c2f4 th:text="${obj.title}">
+                                        </div>
+                                        <div class="self-study-course-subtitle" data-v-bf90c2f4 th:text="${obj.subTitle}"></div>
+                                        <div class="self-study-course-introduce" data-v-bf90c2f4>
+                                            <span class="self-study-course-price" data-v-bf90c2f4>¥<i data-v-bf90c2f4
+													th:text="${obj.price}"></i></span> <span class="self-study-course-number" data-v-bf90c2f4>1164人学过</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!---->
+                    </div>
+
+                    <div class="maodian">
+                        <a id="3"></a>
+                    </div>
+
+                    <div class="index-title" th:class="${isMobile}==true?'index-title index-title-m':'index-title '" data-v-efa69a38>
+                        <span class="index-title_icon" data-v-efa69a38></span>
+                        <p class="index-title_p1" data-v-efa69a38>体验课程</p>
+                        <p class="index-title_p2" data-v-efa69a38>每一堂课学习一个主题知识</p>
+                        <a href="self-course?type=3" name="index_pc2.0_xinyonghuxianmian_chakangengduo" target="_blank" class="index-title_a" data-v-efa69a38>
+							更多体验课程<i class="index-title_a_i" data-v-efa69a38></i>
+						</a>
+                    </div>
+                    <div class="index-free-course " th:class="${isMobile}==true?'index-free-course index-free-course-m':'index-free-course'" data-v-efa69a38>
+                        <div>
+                            <!--pblCourses-->
+                            <a target="_blank" name="index_pc2.0_xinyonghuxianmian_21606094" class="index-free-course_card" th:each="obj,iterStat:${homeCourseVo.excellentCourses}" th:href="'self-course-detail2?id='+${obj.id}">
+                                <div class="index-free-course_card_bg">
+                                    <img th:src="${obj.img}=='' ? 'img/favicon.png' : 'course/loadCourseImg?uuid='+${obj.img}" th:alt="${obj.title}" class="index-free-course_card_bg_img">
+                                </div>
+                                <div class="index-free-course_card_con">
+                                    <p class="index-free-course_card_con_p" th:text="${obj.title}"></p>
+                                    <p class="index-free-course_card_con_p1">
+                                        <span class="index-free-course_card_con_p1_span2" th:text="${obj.price}"></span>
+                                    </p>
+                                    <p class="index-free-course_card_con_p2">43554545454594人学过</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="maodian">
+                        <a id="4"></a>
+                        <!--锚点用的-->
+                    </div>
+                    <div class="index-title" th:class="${isMobile}==true?'index-title index-title-m':'index-title '" data-v-efa69a38>
+                        <span class="index-title_icon" data-v-efa69a38></span>
+                        <p class="index-title_p1" data-v-efa69a38>师资介绍</p>
+                        <p class="index-title_p2" data-v-efa69a38>课程研发团队&教师团队</p>
+                    </div>
+
+
+                    <!--教师介绍-->
+
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background-image:url(./static/img/1image.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./static/img/2image.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./static/img/3image.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./static/img/4image.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(./static/img/5image.png)"></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <!--
+                    <div class="layui-carousel" id="test10">
+                        <div carousel-item="">
+                            <div><img th:src="'/static/img/1image.png'" /></div>
+                            <div><img th:src="'/static/img/2image.png'" /></div>
+                            <div><img th:src="'/static/img/3image.png'" /></div>
+                            <div><img th:src="'/static/img/4image.png'" /></div>
+                            <div><img th:src="'/static/img/5image.png'" /></div>
+                        </div>
+                    </div>
+-->
+                    <div class="inquiries" data-v-efa69a38 th:if="${not isMobile}">
+                        <p data-v-efa69a38>创造力星球·优质的线下教育培训机构</p>
+                        <span class="inquiries-number" data-v-efa69a38>免费咨询热线：13537812256</span>
+                    </div>
+
+                    <div class="inquiries-mobile" data-v-efa69a38="" th:if="${isMobile}">
+                        <p data-v-efa69a38="">
+                            创造力星球<br data-v-efa69a38="">免费咨询热线
+                        </p>
+                        <a href="tel:13537812256" class="inquiries-number" data-v-efa69a38="">13537812256</a>
+                    </div>
+
+                </div>
+
+                <div th:insert="~{public :: public_footer}"></div>
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../static/layui/layui.js"></script>
+    <script src="../static/layui/swiper-bundle.min.js"></script>
+    <script>
+        layui.use(['carousel', 'form'], function() {
+            var carousel = layui.carousel,
+                form = layui.form;
+
+            //常规轮播
+            carousel.render({
+                elem: '#test1',
+                arrow: 'always'
+            });
+
+            //改变下时间间隔、动画类型、高度
+            carousel.render({
+                elem: '#test2',
+                interval: 1800,
+                anim: 'fade',
+                height: '120px'
+            });
+
+            //设定各种参数
+            var ins3 = carousel.render({
+                elem: '#test3'
+            });
+            //图片轮播
+            carousel.render({
+                elem: '#test10',
+                width: 'auto',
+                height: '440px',
+                interval: 3000
+            });
+
+            //事件
+            carousel.on('change(test4)', function(res) {
+                console.log(res)
+            });
+
+            var $ = layui.$,
+                active = {
+                    set: function(othis) {
+                        var THIS = 'layui-bg-normal',
+                            key = othis.data('key'),
+                            options = {};
+
+                        othis.css('background-color', '#5FB878').siblings().removeAttr('style');
+                        options[key] = othis.data('value');
+                        ins3.reload(options);
+                    }
+                };
+
+            //监听开关
+            form.on('switch(autoplay)', function() {
+                ins3.reload({
+                    autoplay: this.checked
+                });
+            });
+
+            $('.demoSet').on('keyup', function() {
+                var value = this.value,
+                    options = {};
+                if (!/^\d+$/.test(value)) return;
+
+                options[this.name] = value;
+                ins3.reload(options);
+            });
+
+            //其它示例
+            $('.demoTest .layui-btn').on('click', function() {
+                var othis = $(this),
+                    type = othis.data('type');
+                active[type] ? active[type].call(this, othis) : '';
+            });
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+
+
+</body>
+
+</html>

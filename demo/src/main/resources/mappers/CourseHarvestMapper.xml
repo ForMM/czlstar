@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo.dao.CourseHarvestMapper" >
+  <resultMap id="BaseResultMap" type="com.example.demo.dao.entity.CourseHarvest" >
+    <id column="id" property="id" jdbcType="VARCHAR" />
+    <result column="course_id" property="courseId" jdbcType="VARCHAR" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="object" property="object" jdbcType="VARCHAR" />
+    <result column="content" property="content" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from t_course_harvest
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.example.demo.dao.entity.CourseHarvest" >
+    <selectKey keyProperty="id" resultType="String" order="BEFORE">
+      select replace(uuid(), '-', '') as id
+    </selectKey>
+    insert into t_course_harvest (id, course_id, `name`, title,
+      `object`, content, create_time
+      )
+    values (#{id,jdbcType=VARCHAR}, #{courseId,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{title,jdbcType=VARCHAR},
+      #{object,jdbcType=VARCHAR}, #{content,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.example.demo.dao.entity.CourseHarvest" >
+    update t_course_harvest
+    set course_id = #{courseId,jdbcType=VARCHAR},
+      `name` = #{name,jdbcType=VARCHAR},
+      title = #{title,jdbcType=VARCHAR},
+      `object` = #{object,jdbcType=VARCHAR},
+      content = #{content,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select id, course_id, `name`, title, `object`, content, create_time
+    from t_course_harvest
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, course_id, `name`, title, `object`, content, create_time
+    from t_course_harvest
+  </select>
+
+  <select id="selectByCourseId" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select id, course_id, `name`, title, `object`, content, create_time
+    from t_course_harvest
+    where course_id = #{courseId,jdbcType=VARCHAR} order by create_time desc limit 4
+  </select>
+</mapper>

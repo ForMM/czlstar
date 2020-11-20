@@ -1,0 +1,646 @@
+.courseDetailContainer {
+    background: #fff
+}
+
+.moduleConContainerCommonStyle {
+    width: 930px;
+    margin: 0 auto
+}
+
+.moduleCommonBoxShadow {
+    box-shadow: 0 10px 32px rgba(10, 31, 68, .07)
+}
+
+.moduleItemHoverAnimate {
+    transition: transform .2s ease;
+    -webkit-transition: transform .2s ease;
+    -moz-transition: transform ease .2s;
+    -o-transition: transform ease .2s;
+    -ms-transition: transform ease .2s
+}
+
+.moduleItemHoverAnimate:hover {
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    -ms-transform: translateY(-5px)
+}
+
+.moduleSpace {
+    padding-top: 24px;
+    padding-bottom: 24px
+}
+
+.moduleSpace:first-child {
+    margin-top: 0
+}
+
+.sjk_cd_mainFontColor1 {
+    color: #323e48
+}
+
+.sjk_cd_mainFontColor2 {
+    color: #5b656d
+}
+
+.sjk_cd_mainText1 {
+    color: #323e48
+}
+
+.sjk_cd_mainText1, .sjk_cd_mainText2 {
+    font-size: 14px;
+    line-height: 28px;
+    white-space: pre-line
+}
+
+.sjk_cd_mainText1 > div{
+    font-size: 14px;
+    line-height: 28px;
+    white-space: pre-line
+}
+
+.sjk_cd_mainText2 {
+    color: #5b656d
+}
+
+.sjk_cd_mainText3 {
+    color: #5b656d;
+    font-size: 14px;
+    line-height: 24px;
+    white-space: pre-line
+}
+
+.sjk_cd_textBold {
+    font-weight: 700
+}
+
+.sjk_cd_pMarginBottom1 {
+    margin-bottom: 7px
+}
+
+.sjk_cd_pMarginBottom2 {
+    margin-bottom: 8px
+}
+
+.sjk_cd_textH1 {
+    color: #323e48;
+    font-size: 30px;
+    font-weight: 700
+}
+
+.sjk_cd_textH2 {
+    color: #323e48;
+    font-size: 22px
+}
+
+.sjk_cd_moduleInnerTitle {
+    color: #323e48;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    white-space: pre-line
+}
+
+.sjk_cd_moduleInnerTitleEmphasis {
+    color: #323e48;
+    font-size: 20px;
+    font-weight: 700;
+    white-space: pre-line
+}
+
+.sjk_cd_moduleInnerTitleThin {
+    color: #323e48;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    white-space: pre-line
+}
+
+@media screen and (max-width: 768px) {
+    .courseDetailContainer {
+        background: #fafbfc
+    }
+
+    .moduleConContainerCommonStyle {
+        width: calc(100% - 36px)
+    }
+
+    .moduleItemHoverAnimate:hover {
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -o-transform: none;
+        -ms-transform: none
+    }
+
+    .moduleSpace {
+        padding-top: 12px;
+        padding-bottom: 12px
+    }
+
+    .sjk_cd_mainText1, .sjk_cd_mainText2 {
+        font-size: 13px;
+        line-height: 22px
+    }
+
+    .sjk_cd_mainText3 {
+        font-size: 12px;
+        line-height: 20px
+    }
+
+    .sjk_cd_pMarginBottom2 {
+        margin-bottom: 6px
+    }
+
+    .sjk_cd_textH1 {
+        font-size: 18px
+    }
+
+    .sjk_cd_textH2 {
+        font-size: 16px;
+        line-height: 26px
+    }
+
+    .sjk_cd_moduleInnerTitle {
+        font-size: 16px;
+        line-height: 22px
+    }
+}
+
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+.img-area-bg {
+    background: #ccc;
+    cursor: pointer
+}
+
+.box-shadow {
+    box-shadow: 0 8px 50px rgba(0, 0, 0, .1)
+}
+
+#page img {
+    background: #ccc;
+    cursor: pointer
+}
+
+.m0 {
+    margin: 0 !important
+}
+
+.ml24 {
+    margin-left: 24px
+}
+
+.ml7-5 {
+    margin-left: 7.5px
+}
+
+.coupon_can_use {
+    width: 203px;
+    height: 29px;
+    background: url(//img.sanjieke.cn/online_class/no_use_coupon.png) no-repeat 0;
+    background-size: 203px auto;
+    color: #fff;
+    margin-top: 91px;
+    padding-left: 15px;
+    text-align: center;
+    line-height: 29px;
+    display: none
+}
+
+.mt565 {
+    margin-top: 56.5px
+}
+
+.mt9 {
+    margin-top: 9px
+}
+
+.mb60 {
+    margin-bottom: 60px
+}
+
+.pb57 {
+    padding-bottom: 57px
+}
+
+.pt57 {
+    padding-top: 57px
+}
+
+.pb62 {
+    padding-bottom: 62px
+}
+
+.pb100 {
+    padding-bottom: 100px
+}
+
+.bg-white {
+    background: #fff
+}
+
+.color-f9500 {
+    color: #ff9500
+}
+
+.color-black {
+    color: #000
+}
+
+.section_center {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden
+}
+
+.section_bgcolor_white {
+    background: #fff
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden
+}
+
+.clear {
+    zoom: 1
+}
+
+.half-circle #bigHalfCircleCandy {
+    width: 100%;
+    height: 100px;
+    fill: #343646;
+    margin-bottom: -3px
+}
+
+.warp {
+    min-width: 1080.5px;
+    margin: 0 auto
+}
+
+.section-warp {
+    width: 967px;
+    margin: 0 auto
+}
+
+#frameDiv {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90000;
+    display: none
+}
+
+#frameDiv .frameContainer {
+    width: 600px;
+    height: 500px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto
+}
+
+#frameDiv .frameContainer .close {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -24px;
+    right: -24px;
+    display: inline-block;
+    background: url(//img.sanjieke.cn/common/white-close.png) no-repeat 50%;
+    background-size: cover;
+    cursor: pointer
+}
+
+#frameDiv .frameContainer #myFrameId {
+    width: 100%;
+    height: 100%
+}
+
+#figure_box {
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+    position: relative
+}
+
+#figure_box .figure_box_content {
+    width: 855px;
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 9
+}
+
+.section-color-o {
+    color: #ff9500
+}
+
+.section-title {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    padding: 40px 0 20px
+}
+
+.section-line {
+    width: 100%;
+    height: 1px;
+    background: #ececec;
+    margin: 25px 0
+}
+
+.img-show-hide-pc {
+    display: block
+}
+
+.img-show-hide-m {
+    display: none
+}
+
+.container-center {
+    width: 967px;
+    margin: 0 auto
+}
+
+.container-center h1 {
+    font-size: 24px;
+    color: #343646;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 26px;
+    font-weight: 400
+}
+
+.container-center h2 {
+    text-align: center;
+    font-size: 16px;
+    color: #989898;
+    font-weight: 400;
+    margin: 0 auto 30px;
+    line-height: 23px
+}
+
+.container-common {
+    padding: 40px 0
+}
+
+.module-common {
+    position: relative
+}
+
+.regGetCourseBtnContainer {
+    width: 171px;
+    height: 56px;
+    background: #ff4d2f;
+    background-image: linear-gradient(-180deg, #ff4d2f, #ff6d5c);
+    box-shadow: 0 4px 8px 0 rgba(252, 158, 158, .57);
+    border-radius: 28px;
+    position: fixed;
+    right: 10px;
+    bottom: 90px;
+    z-index: 2400;
+    text-align: center;
+    line-height: 56px;
+    display: inline-block
+}
+
+.regGetCourseBtnContainer .regGetCourseBtnIcon {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px
+}
+
+.regGetCourseBtnContainer .regGetCourseBtnWenan {
+    font-size: 15px;
+    color: #fff;
+    vertical-align: middle;
+    font-weight: 400
+}
+
+.codeGetCourse_container {
+    width: 175px;
+    height: 177px;
+    background-image: linear-gradient(43deg, #f0653a, #f3943e);
+    box-shadow: 0 8px 16px 0 rgba(253, 201, 140, .57);
+    border-radius: 7px;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    z-index: 2400
+}
+
+.codeGetCourse_container p {
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    margin-top: 14px
+}
+
+.codeGetCourse_container img {
+    width: 110px;
+    height: 110px;
+    display: block;
+    margin: 14px auto auto
+}
+
+.xuebiBtnContainer {
+    width: 171px;
+    height: 56px;
+    background: #ff4d2f;
+    background-image: linear-gradient(270deg, #ff5f00, #ff9528);
+    background-image: -o-linear-gradient(270deg, #ff5f00 0, #ff9528 100%);
+    box-shadow: 0 4px 8px 0 rgba(253, 201, 140, .57);
+    border-radius: 28px;
+    position: fixed;
+    right: 10px;
+    bottom: 220px;
+    z-index: 2400;
+    text-align: center;
+    display: inline-block
+}
+
+.xuebiBtnContainer .xuebiBtnWenan {
+    font-size: 15px;
+    color: #fff;
+    vertical-align: middle;
+    font-weight: 400;
+    margin-top: 12px
+}
+
+.xuebiBtnContainer .xuebiBtnWenan2 {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #fff
+}
+
+.module-card {
+    width: 100%;
+    background: #fff;
+    overflow: hidden
+}
+
+.module-card .card-container {
+    width: 100%
+}
+
+.module-card .card-container .card-con {
+    width: 469px;
+    height: 308px;
+    border: 1px solid #dcdcde
+}
+
+.module-card .card-container .card-con .card-title {
+    width: 100%;
+    height: 85px;
+    background: #343646;
+    color: #fff;
+    font-weight: 600;
+    line-height: 85px;
+    font-size: 22px
+}
+
+.module-card .card-container .card-con .card-title i {
+    margin-left: 40px
+}
+
+.module-card .card-container .card-con .card-title .card-title-first, .module-card .card-container .card-con .card-title .card-title-second {
+    width: 29px;
+    height: 41px;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.module-card .card-container .card-con .card-title .card-title-first {
+    background: url(//img.sanjieke.cn/online_class/1.png) no-repeat 50%;
+    background-size: 16px auto
+}
+
+.module-card .card-container .card-con .card-title .card-title-second {
+    background: url(//img.sanjieke.cn/online_class/2.png) no-repeat 50%;
+    background-size: 23px auto
+}
+
+.module-card .card-container .card-con .card-title span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px
+}
+
+.module-card .card-container .card-con .card-content p {
+    width: 80%;
+    display: block;
+    text-align: left;
+    color: #343646;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 33px auto auto
+}
+
+.module-card .card-container .card-con:first-child {
+    float: left
+}
+
+.module-card .card-container .card-con:last-child {
+    float: right
+}
+
+.module-card .card-container .card-fit .card-title {
+    line-height: 25px
+}
+
+.module-card .card-container .card-fit .card-title i {
+    width: 53px;
+    height: 53px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-top: 18px
+}
+
+.module-card .card-container .card-fit .card-title span {
+    display: inline-block;
+    vertical-align: bottom
+}
+
+.module-card .card-container .card-fit .card-title .card-title-shihe {
+    background: url(//img.sanjieke.cn/online_class/shihe.png) no-repeat 50%;
+    background-size: cover
+}
+
+.module-card .card-container .card-fit .card-title .card-title-bushihe {
+    background: url(//img.sanjieke.cn/online_class/bushihe.png) no-repeat 50%;
+    background-size: cover
+}
+
+.module-card .content-container {
+    width: calc(100% - 82px);
+    border: 1px solid #dcdcde;
+    padding: 42px
+}
+
+.module-card .content-container .content-per {
+    width: 100%;
+    position: relative
+}
+
+.module-card .content-container .content-per h2 {
+    color: #343646;
+    font-size: 24px;
+    display: inline;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.module-card .content-container .content-per ul {
+    margin-left: 200px
+}
+
+.module-card .content-container .content-per ul li {
+    color: #343646;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 24px
+}
+
+.module-card .content-container .content-per:first-child {
+    margin-bottom: 50px
+}
+
+.module-card .content-container .content-per:first-child h2 {
+    color: #ff9500
+}
+
+@media screen and (max-width: 768px) {
+    #page-main {
+        padding-bottom: 90px
+    }
+
+    .container-center {
+        width: 95%
+    }
+
+    .img-show-hide-pc {
+        display: none
+    }
+
+    .img-show-hide-m {
+        display: block
+    }
+}

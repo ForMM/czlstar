@@ -60,6 +60,15 @@ public class CourseController {
         logger.info("filename:{},size:{}", file.getName(), file.getSize());
         return courseService.uploadCourseImg(file);
     }
+    
+    @LogAnnotation
+    @RequestMapping(value = "/uploadCourseBgImg", method = RequestMethod.POST)
+    @ResponseBody
+    public Result uploadCourseBgImg(@RequestParam("file") MultipartFile file) {
+        logger.info("filename:{},size:{}", file.getName(), file.getSize());
+        return courseService.uploadCourseImg(file);
+    }
+    
 
     /**
      * 获取文件

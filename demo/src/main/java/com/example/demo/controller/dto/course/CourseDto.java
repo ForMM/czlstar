@@ -18,4 +18,6 @@ public class CourseDto {
 
     @StringValidatorAnn(notEmpty=true,maxLength = 100)
     private String img;
+    
+    private String bgImg;
 }

@@ -111,10 +111,10 @@
 
 .sjk_cd_moduleInnerTitleThin {
     color: #323e48;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 22px;
     font-weight: 700;
-    white-space: pre-line
+    white-space: pre-line;
 }
 
 @media screen and (max-width: 768px) {

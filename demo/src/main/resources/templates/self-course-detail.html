@@ -79,7 +79,7 @@
 				<div class="courseDetailContainer" th:id="${courseDetail.course.id}">
 					<div>
 						<div class="module-block module-20071">
-							<div class="bannerBg" th:style="background:url(course/loadCourseImg?uuid=${courseDetail.course.course.bg_img}) no-repeat 50%">
+							<div class="bannerBg" th:style="'background:url(course/loadCourseImg?uuid='+${courseDetail.course.bgImg}+' no-repeat 50%'">
 								<div class="bannerContainer moduleConContainerCommonStyle">
 									<div class="bannerLeft">
 										<img

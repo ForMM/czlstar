@@ -17,6 +17,8 @@ public class Course implements Serializable {
     private String type;
 
     private String img;
+    
+    private String bgImg;
 
     private Date createTime;
 
@@ -85,8 +87,19 @@ public class Course implements Serializable {
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
     }
+    
+    
+    
 
-    @Override
+    public String getBgImg() {
+		return bgImg;
+	}
+
+	public void setBgImg(String bgImg) {
+		this.bgImg = bgImg;
+	}
+
+	@Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(getClass().getSimpleName());

@@ -9167,7 +9167,7 @@
 
 .module-20053 .module20053bg {
     width: 100%;
-    background: #f4f6f9;
+    background: #ffffff;
     padding: 32px 0;
     overflow: hidden
 }
@@ -9178,7 +9178,7 @@
 }
 
 .module-20053 .module20053bg .introTeacherContainer .introTeacherContainerPc .teacherAvator {
-    width: 370px;
+    width: 100%;
     height: auto;
     float: left;
     overflow: hidden
@@ -9357,7 +9357,7 @@
 }
 
 .module-20054 .courseOutlineContainer .outlineListContainer .outlineTitle .titleCon2 {
-    margin-left: 105px;
+    margin-left: 150px;
     display: block
 }
 
@@ -9380,7 +9380,7 @@
 }
 
 .module-20054 .courseOutlineContainer .outlineListContainer .outlineContent {
-    width: calc(100% - 62px);
+    width: calc(100% - 0px);
     padding: 24px 30px;
     border: 1px solid #f4f6f9;
     border-top: none;
@@ -9389,7 +9389,7 @@
 }
 
 .module-20054 .courseOutlineContainer .outlineListContainer .outlineContent .outlineLeft {
-    width: 420px;
+    width: 700px;
     float: left;
     line-height: 28px;
     font-size: 14px;
@@ -9483,10 +9483,10 @@
 }
 
 .module-20055 .companyContainer .companyItemContainer .companyItem {
-    width: 236px;
+    width: 290px;
     /*height: 255px;*/
     border: 1px solid #f3f3f3;
-    background: #fff;
+    background: #fcfbf6;
     padding: 32px 26px;
     float: left
 }
@@ -9963,7 +9963,7 @@
 
 .module-20058 .container20058 .fixedMenuContainer .menuList .listLi {
     color: #c3d4e4;
-    font-size: 12px;
+    font-size: 16px;
     margin-bottom: 14px;
     cursor: pointer;
     display: block
@@ -10925,8 +10925,8 @@
 }
 
 .module-20065 .titleImgContainer .doubleImg .imgItem {
-    width: 440px;
-    height: 254px;
+    width: 930px;
+    height: 260px;
     overflow: hidden;
     display: inline-block
 }
@@ -11803,14 +11803,13 @@
 
 .module-20071 {
     width: 100%;
-    height: 520px;
-    padding-bottom: 24px
+    height: 340px;
 }
 
 .module-20071 .bannerBg {
     width: 100%;
     height: 100%;
-    background-image: url(../img/scratch_image.png);
+    background-image: url(../img/dakebanner.jpg);
     background-size: cover;
     overflow: hidden;
     margin: 0 auto;
@@ -11983,17 +11982,17 @@
 }
 
 .module-20072 .courseGetContainer .courseGet1 .courseGet1Item {
-    width: 290px;
+    width: 286px;
     /*height: 258px;*/
     display: inline-block;
     vertical-align: top;
-    margin-top: 32px
+    margin-top: 32px;
 }
 
 .module-20072 .courseGetContainer .courseGet1 .courseGet1Item .itemTop {
     width: 100%;
     height: 127px;
-    background: #7e57c6 url(//asset.3jk.top/project/homepage/img/courseGet2Bg.png?v=ac66fd9) no-repeat 50%;
+    background: #ffc746 url(//asset.3jk.top/project/homepage/img/courseGet2Bg.png?v=ac66fd9) no-repeat 50%;
     background-size: 100% auto;
     display: flex;
     align-items: center;
@@ -12031,7 +12030,8 @@
 }
 
 .module-20072 .courseGetContainer .courseGet1 .courseGet1Item .itemBottom {
-    padding: 25px 32px;
+	margin:auto;
+    padding: 25px 4px;
     width: calc(100% - 64px);
     height: calc(100% - 177px);
     text-align: left

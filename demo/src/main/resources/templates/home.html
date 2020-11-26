@@ -52,8 +52,8 @@
         .swiper-slide {
             background-position: center;
             background-size: cover;
-            width: 300px;
-            height: 300px;
+            width: 800px;
+            height: 407px;
         }
         
         .carousel-inner img {
@@ -264,7 +264,6 @@
 								<td th:text="${user.name}">tyrone</td>
 								<td th:text="${user.age}">18</td>
 							</tr> -->
-                        <!--这个东西有点六，用那个t什么鬼的玩意就能弄好几个东西出来-->
                         <div class="courses-detail courses-detail-PC">
                             <a target="_blank" class="detail-info detail-info0" th:each="obj,iterStat:${homeCourseVo.coreCourses}" th:style="'background:url(' + @{(${obj.img}=='' ? 'img/favicon.png' : 'course/loadCourseImg?uuid='+${obj.img})} + ') no-repeat 50%'" th:href="'self-course-detail?id='+${obj.id}">
                                 <div class="interaction-content">
@@ -318,15 +317,15 @@
                         <ul data-v-bf90c2f4 th:if="${not isMobile}">
                             <li class="self-study-introduce yy-introduce" data-v-bf90c2f4>
                                 <div data-v-bf90c2f4>
-                                    <h3 data-v-bf90c2f4>Micro:bit硬件编程</h3>
-                                    <p class="self-study-introduce-info" data-v-bf90c2f4>立刻掌握运营、增长、营销的热门技能</p>
+                                    <h3 data-v-bf90c2f4>精品课程</h3>
+                                    <p class="self-study-introduce-info" data-v-bf90c2f4>培养4~7岁孩子动手能力、专注力、逻辑思维能力以及创造力</p>
                                     <a href="self-course?type=2" class="self-study-introduce-more" data-v-bf90c2f4>查看更多<i class="more-icon" data-v-bf90c2f4></i>
 									</a>
                                 </div>
                             </li>
                             <!--excellentCourses-->
                             <li data-v-bf90c2f4 th:each="obj,iterStat:${homeCourseVo.pblCourses}">
-                                <a th:href="'self-course-detail1?id='+${obj.id}" th:title="${obj.title}" target="_blank" data-v-bf90c2f4>
+                                <a th:href="'self-course-detail?id='+${obj.id}" th:title="${obj.title}" target="_blank" data-v-bf90c2f4>
                                     <div class="self-study-course-pic" data-v-bf90c2f4>
                                         <img th:src="${obj.img}=='' ? 'img/favicon.png' : 'course/loadCourseImg?uuid='+${obj.img}" th:alt="${obj.title}" class="index-free-course_card_bg_img" data-v-bf90c2f4>
                                     </div>
@@ -361,7 +360,7 @@
                     <div class="index-free-course " th:class="${isMobile}==true?'index-free-course index-free-course-m':'index-free-course'" data-v-efa69a38>
                         <div>
                             <!--pblCourses-->
-                            <a target="_blank" name="index_pc2.0_xinyonghuxianmian_21606094" class="index-free-course_card" th:each="obj,iterStat:${homeCourseVo.excellentCourses}" th:href="'self-course-detail2?id='+${obj.id}">
+                            <a target="_blank" name="index_pc2.0_xinyonghuxianmian_21606094" class="index-free-course_card" th:each="obj,iterStat:${homeCourseVo.excellentCourses}" th:href="'self-course-detail?id='+${obj.id}">
                                 <div class="index-free-course_card_bg">
                                     <img th:src="${obj.img}=='' ? 'img/favicon.png' : 'course/loadCourseImg?uuid='+${obj.img}" th:alt="${obj.title}" class="index-free-course_card_bg_img">
                                 </div>

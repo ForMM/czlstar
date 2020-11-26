@@ -142,6 +142,7 @@ public class WebController {
 
 		return "self-course-detail";
 	}
+		
 
 	@RequestMapping(value = "/free-course",method = RequestMethod.GET)
 	public String freeCourse(Model model,HttpServletRequest request){

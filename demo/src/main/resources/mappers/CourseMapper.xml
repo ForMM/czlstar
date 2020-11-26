@@ -9,6 +9,7 @@
     <result column="price" property="price" jdbcType="DOUBLE" />
     <result column="type" property="type" jdbcType="VARCHAR" />
     <result column="img" property="img" jdbcType="VARCHAR" />
+     <result column="bg_img" property="bgImg" jdbcType="VARCHAR" />
     <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
   </resultMap>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
@@ -20,10 +21,10 @@
       select replace(uuid(), '-', '') as id
     </selectKey>
     insert into t_zq_course (id,title, sub_title, `status`,
-      price, `type`, img, create_time
+      price, `type`, img, create_time,bg_img
       )
     values (#{id,jdbcType=VARCHAR},#{title,jdbcType=VARCHAR}, #{subTitle,jdbcType=VARCHAR}, #{status,jdbcType=BIT},
-      #{price,jdbcType=DOUBLE}, #{type,jdbcType=VARCHAR}, #{img,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}
+      #{price,jdbcType=DOUBLE}, #{type,jdbcType=VARCHAR}, #{img,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{bgImg,jdbcType=VARCHAR}
       )
   </insert>
   <update id="updateByPrimaryKey" parameterType="com.example.demo.dao.entity.Course" >
@@ -34,16 +35,17 @@
       price = #{price,jdbcType=DOUBLE},
       `type` = #{type,jdbcType=VARCHAR},
       img = #{img,jdbcType=VARCHAR},
+       bg_img = #{bgImg,jdbcType=VARCHAR},
       create_time = #{createTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=VARCHAR}
   </update>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
-    select id, title, sub_title, `status`, price, `type`, img, create_time
+    select id, title, sub_title, `status`, price, `type`, img, create_time,bg_img
     from t_zq_course
     where id = #{id,jdbcType=VARCHAR}
   </select>
   <select id="selectAll" resultMap="BaseResultMap" >
-    select id, title, sub_title, `status`, price, `type`, img, create_time
+    select id, title, sub_title, `status`, price, `type`, img, create_time,bg_img
     from t_zq_course
   </select>
 

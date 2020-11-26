@@ -99,6 +99,7 @@ public class CourseServiceImpl implements CourseService {
             course.setPrice(courseDto.getPrice());
             course.setType(courseDto.getType());
             course.setImg(courseDto.getImg());
+            course.setBgImg(courseDto.getBgImg());
             course.setStatus(2);
             course.setCreateTime(new Date());
             courseMapper.insert(course);

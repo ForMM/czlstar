@@ -797,15 +797,16 @@
 .course-core-box .courses-detail .detail-info .class-title {
     margin: 5px 0 29px;
     font-size: 26px;
-    color: #fff;
+    color: #FF3030;
     font-weight: 700;
     line-height: 37px
 }
 
 .course-core-box .courses-detail .detail-info .about-spot {
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: 450;
     line-height: 22px;
-    color: #fff
+    color: #FF3030;
 }
 
 .course-core-box .courses-detail .detail-info .about-spot:last-child {
@@ -1247,7 +1248,7 @@
 }
 
 .self-study-home-list ul li.yy-introduce[data-v-bf90c2f4] {
-    background: url(../img/microbit.jpg) no-repeat;
+    background: url(../img/jingping.jpg) no-repeat;
     background-size: 275px auto
 }
 
@@ -1259,7 +1260,7 @@
 .self-study-home-list ul li h3[data-v-bf90c2f4] {
     font-size: 30px;
     line-height: 100px;
-    color: #000000;
+    color: #fb7d4d;
     margin: -11px 0 8px 33px
 }
 
@@ -1269,16 +1270,16 @@
     margin-bottom: 22px;
     line-height: 22px;
     font-size: 14px;
-    color: #fff
+    color: #fb7d4d;
 }
 
 .self-study-home-list ul li .self-study-introduce-more[data-v-bf90c2f4] {
     height: 32px;
     line-height: 32px;
     font-size: 15px;
-    color: #fff;
+    color:#fb7d4d;
     margin-left: 33px;
-    border: 1px solid hsla(0, 0%, 100%, .5);
+    border: 1px solid hsla(83 ,134, 139, .5);
     display: inline-block;
     padding: 0 16px;
     border-radius: 18px
@@ -1457,7 +1458,7 @@
     .self-study-home-list ul li h3[data-v-bf90c2f4] {
         font-size: 30px;
         line-height: 42px;
-        color: #fff;
+        color: #FF3030;
         margin: 70px 0 8px 40px
     }
     .self-study-home-list ul li .self-study-introduce-info[data-v-bf90c2f4] {
@@ -1466,15 +1467,15 @@
         margin-bottom: 22px;
         line-height: 22px;
         font-size: 14px;
-        color: #fff
+        color: #FF3030;
     }
     .self-study-home-list ul li .self-study-introduce-more[data-v-bf90c2f4] {
         height: 32px;
         line-height: 32px;
         font-size: 15px;
-        color: #fff;
+        color: #FF3030;
         margin-left: 40px;
-        border: 1px solid #fff;
+        border: 1px solid #FF3030;
         display: inline-block;
         padding: 0 16px;
         border-radius: 18px;

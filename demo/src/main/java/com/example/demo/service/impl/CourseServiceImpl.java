@@ -51,6 +51,9 @@ public class CourseServiceImpl implements CourseService {
     @Autowired
     public CourseTeacherMapper courseTeacherMapper;
 
+    @Autowired
+    public CourseVideoMapper courseVideoMapper;
+
     @Override
     public Result uploadCourseImg(MultipartFile file) {
         Result result = new Result<>();
@@ -366,6 +369,30 @@ public class CourseServiceImpl implements CourseService {
             courseTeacher.setPhoto(courseTeacherDto.getPhoto());
             courseTeacher.setCreateTime(new Date());
             courseTeacherMapper.insert(courseTeacher);
+        } catch (Exception e) {
+            logger.info("添加课程导师失败", e);
+            result.setCode(0);
+            result.setMsg("添加课程导师失败");
+        }
+        return result;
+    }
+
+
+    @Override
+    public Result addCourseVideo(CourseVideo courseVideo) {
+        Result result = new Result<>();
+        result.setCode(1);
+        result.setMsg("添加课程成功");
+        try {
+
+            String courseId = courseVideo.getCourseId();
+            Course course = courseMapper.selectByPrimaryKey(courseId);
+            if (course==null){
+                result.setCode(0);
+                result.setMsg("添加课程目标失败");
+            }
+            courseVideo.setCreateTime(new Date());
+            courseVideoMapper.insert(courseVideo);
         } catch (Exception e) {
             logger.info("添加课程导师失败", e);
             result.setCode(0);

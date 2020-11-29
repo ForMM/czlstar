@@ -79,7 +79,7 @@
 				<div class="courseDetailContainer" th:id="${courseDetail.course.id}">
 					<div>
 						<div class="module-block module-20071">
-							<div class="bannerBg" th:style="'background:url(course/loadCourseImg?uuid='+${courseDetail.course.bgImg}+' no-repeat 50%'">
+							<div class="bannerBg" th:style="'background:url(course/loadCourseImg?uuid='+${courseDetail.course.bgImg}+') no-repeat 50%'">
 								<div class="bannerContainer moduleConContainerCommonStyle">
 									<div class="bannerLeft">
 										<img
@@ -324,6 +324,37 @@
 						</div>
 					</div>
 				</div>
+
+
+
+
+				<div >
+					<!-- test1 -->
+					<div>
+						<div class="module-block module-20045 moduleSpace">
+							<div class="module-20045-content1 module-20045-marginBottom">
+								<span class="innerIcon"></span> <span
+									class="innerTitle sjk_cd_textH1">授课视频</span>
+							</div>
+
+						</div>
+					</div>
+					<div>
+						<div class="module-block module-20049 moduleSpace">
+							<div class="suitPeopleContainer moduleConContainerCommonStyle"
+								 th:each="obj,iterStat:${courseDetail.courseVideoList}">
+								<video width="320" height="240" controls preload="auto">
+									<source id="videocc" th:src="'course/getCourseVideo?filepath='+${obj.path}" type="video/mp4"
+											/>
+								</video>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
 				<div id="a6">
 						
 					</div>

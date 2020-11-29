@@ -14,4 +14,5 @@ public class CourseDetailVo {
     private List<CourseOutline> courseOutlineList;
     private List<CourseTeacher> courseTeacherList;
     private List<CourseCase> courseCaseList;
+    private List<CourseVideo> courseVideoList;
 }

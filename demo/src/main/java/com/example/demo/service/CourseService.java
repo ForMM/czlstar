@@ -3,6 +3,7 @@ package com.example.demo.service;
 import com.example.demo.common.Result;
 import com.example.demo.controller.dto.course.*;
 import com.example.demo.dao.entity.CourseTeacher;
+import com.example.demo.dao.entity.CourseVideo;
 import org.springframework.web.multipart.MultipartFile;
 
 public interface CourseService {
@@ -55,6 +56,7 @@ public interface CourseService {
 	public Result addCourseCase(CourseCaseDto courseCaseDto);
 
 	public Result addCourseTeacher(CourseTeacherDto courseTeacherDto);
+	public Result addCourseVideo(CourseVideo courseVideo);
 
 
 }

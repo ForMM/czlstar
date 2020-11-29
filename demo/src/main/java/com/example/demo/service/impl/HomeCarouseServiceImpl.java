@@ -56,6 +56,9 @@ public class HomeCarouseServiceImpl implements HomeCarouseService {
     @Autowired
     public CourseOutlineMapper courseOutlineMapper;
 
+    @Autowired
+    public CourseVideoMapper courseVideoMapper;
+
     @Override
     public Result uploadCarouseImg(MultipartFile file) {
         Result result = new Result<>();
@@ -152,6 +155,10 @@ public class HomeCarouseServiceImpl implements HomeCarouseService {
 
         List<CourseOutline> courseOutlines = courseOutlineMapper.selectByCourseId(course.getId());
         courseDetailVo.setCourseOutlineList(courseOutlines);
+
+        List<CourseVideo> courseVideos = courseVideoMapper.selectByCourseId(course.getId());
+        courseDetailVo.setCourseVideoList(courseVideos);
+
         result.setCode(1);
         result.setMsg("操作成功");
         result.setData(courseDetailVo);

@@ -71,21 +71,16 @@
 	<div data-server-rendered="true" id="__nuxt">
 		<!---->
 		<div id="__layout">
-			<div id="page-main" style="margin-top: 90px">
-				<div id="top_banner" data-v-7e6e90a2>
-					<!---->
-				</div>
+			<div id="page-main" style="margin-top: 0px">
+				<div id="top_banner" data-v-7e6e90a2></div>
 				<div th:insert="~{public :: public_top}"></div>
+				<div id="index" data-v-efa69a38>
 				<div class="courseDetailContainer" th:id="${courseDetail.course.id}">
 					<div>
 						<div class="module-block module-20071">
-							<div class="bannerBg" th:style="'background:url(course/loadCourseImg?uuid='+${courseDetail.course.bgImg}+' no-repeat 50%'">
-								<div class="bannerContainer moduleConContainerCommonStyle">
-									<div class="bannerLeft">
-										<img
-											src="https://cdn.sanjieke.cn/upload/image/1590228505151.png"
-											alt>
-									</div>
+							<div class="bannerBg" th:style="'background:url(course/loadCourseImg?uuid='+${courseDetail.course.bgImg}+') no-repeat 50%'">
+								<!-- <div class="bannerContainer moduleConContainerCommonStyle">
+									
 									<div class="bannerRight">
 										<div class="bannerTag">重磅上新</div>
 										<p class="bannerP1" th:text="${courseDetail.course.title}">运营新人启航计划</p>
@@ -98,7 +93,7 @@
 													次项目实战，用作品提升职场竞争力</span></li>
 										</ul>
 									</div>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</div>
@@ -541,6 +536,7 @@
 				</div>
 				<!---->
 			</div>
+			</div>
 			<div th:insert="~{public :: public_footer}"></div>
 		</div>
 	</div>
@@ -590,7 +586,7 @@
 		$('body').scrollspy({ target: '.navbar-example' })
 	</script>
 	<script>
-		var xiaoshi7tian = $(".bannerBg").attr("data-url");
+		var xiaoshi7tian = $(".courseDetailContainer").attr("id");
 		console.log(xiaoshi7tian);
 	</script>
 

@@ -797,16 +797,16 @@
 .course-core-box .courses-detail .detail-info .class-title {
     margin: 5px 0 29px;
     font-size: 26px;
-    color: #FF3030;
+    color: #FFFFFF;
     font-weight: 700;
     line-height: 37px
 }
 
 .course-core-box .courses-detail .detail-info .about-spot {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 450;
     line-height: 22px;
-    color: #FF3030;
+    color: #FFFFFF;
 }
 
 .course-core-box .courses-detail .detail-info .about-spot:last-child {
@@ -1260,7 +1260,7 @@
 .self-study-home-list ul li h3[data-v-bf90c2f4] {
     font-size: 30px;
     line-height: 100px;
-    color: #fb7d4d;
+    color: #FFFF00;
     margin: -11px 0 8px 33px
 }
 
@@ -1269,17 +1269,17 @@
     margin-left: 33px;
     margin-bottom: 22px;
     line-height: 22px;
-    font-size: 14px;
-    color: #fb7d4d;
+    font-size: 18px;
+    color: #FFFF00;
 }
 
 .self-study-home-list ul li .self-study-introduce-more[data-v-bf90c2f4] {
     height: 32px;
     line-height: 32px;
     font-size: 15px;
-    color:#fb7d4d;
+    color:#FFFF00;
     margin-left: 33px;
-    border: 1px solid hsla(83 ,134, 139, .5);
+    border: 1px solid hsla(255 ,255, 0, .5);
     display: inline-block;
     padding: 0 16px;
     border-radius: 18px

@@ -32,11 +32,13 @@
     <div data-server-rendered="true" id="__nuxt">
         <!---->
         <div id="__layout">
+        <div th:insert="~{public :: public_top}"></div>
             <div id="page-main" style="margin-top:90px">
-                <div th:insert="~{public :: public_top}"></div>
+                
                 <div id="self-study-course" data-v-29d7523e>
                     <div class="self-study-course-banner" data-v-29d7523e>
-                        <div class="self-study-course-banner-inner" data-v-29d7523e th:style="'background:url(' + @{(${imgpaths}=='' ? 'img/favicon.png' : 'home/loadCarouseImg?uuid='+${imgpaths})} + ') no-repeat 50%'">
+                        <div class="self-study-course-banner-inner" data-v-29d7523e>
+                        
                         </div>
                     </div>
 
@@ -67,6 +69,14 @@
             </div>
         </div>
     </div>
+    
+    <!-- script -->
+    <script>
+		var xiaoshi7tian = $(".txt1").attr("id");
+		console.log(xiaoshi7tian);
+	</script>
+    <!-- script -->
+    
 </body>
 
 </html>

@@ -79,21 +79,6 @@
 					<div>
 						<div class="module-block module-20071">
 							<div class="bannerBg" th:style="'background:url(course/loadCourseImg?uuid='+${courseDetail.course.bgImg}+') no-repeat 50%'">
-								<!-- <div class="bannerContainer moduleConContainerCommonStyle">
-									
-									<div class="bannerRight">
-										<div class="bannerTag">重磅上新</div>
-										<p class="bannerP1" th:text="${courseDetail.course.title}">运营新人启航计划</p>
-										<p class="bannerP2" th:text="${courseDetail.course.subTitle}">帮助
-											0-2 岁新人系统提升运营技能</p>
-										<ul class="bannerUl">
-											<li class="bannerLi"><i></i> <span>优秀学员 3+
-													次内推企业面试机会，免费获得简历面试课</span></li>
-											<li class="bannerLi"><i></i> <span>6 周体系化学习 +1
-													次项目实战，用作品提升职场竞争力</span></li>
-										</ul>
-									</div>
-								</div> -->
 							</div>
 						</div>
 					</div>
@@ -319,6 +304,37 @@
 						</div>
 					</div>
 				</div>
+
+
+
+
+				<div >
+					<!-- test1 -->
+					<div>
+						<div class="module-block module-20045 moduleSpace">
+							<div class="module-20045-content1 module-20045-marginBottom">
+								<span class="innerIcon"></span> <span
+									class="innerTitle sjk_cd_textH1">授课视频</span>
+							</div>
+
+						</div>
+					</div>
+					<div>
+						<div class="module-block module-20049 moduleSpace">
+							<div class="suitPeopleContainer moduleConContainerCommonStyle"
+								 th:each="obj,iterStat:${courseDetail.courseVideoList}">
+								<video width="320" height="240" controls preload="auto">
+									<source id="videocc" th:src="'course/getCourseVideo?filepath='+${obj.path}" type="video/mp4"
+											/>
+								</video>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
 				<div id="a6">
 						
 					</div>

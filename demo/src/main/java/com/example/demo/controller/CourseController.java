@@ -2,6 +2,7 @@ package com.example.demo.controller;
 
 import com.example.demo.common.Result;
 import com.example.demo.controller.dto.course.*;
+import com.example.demo.dao.entity.CourseVideo;
 import com.example.demo.log.annotation.LogAnnotation;
 import com.example.demo.service.CourseService;
 import org.slf4j.Logger;
@@ -11,6 +12,15 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.File;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.RandomAccessFile;
+import java.nio.charset.StandardCharsets;
 
 @Controller
 @RequestMapping("/course")
@@ -176,6 +186,31 @@ public class CourseController {
     public Result addCourseTeacher(CourseTeacherDto courseTeacherDto) {
         logger.info("addCourseTeacher:{}", courseTeacherDto.toString());
         return courseService.addCourseTeacher(courseTeacherDto);
+    }
+
+    @LogAnnotation
+    @RequestMapping(value = "/addCourseVideo", method = RequestMethod.POST)
+    @ResponseBody
+    public Result addCourseVideo(CourseVideo video) {
+        logger.info("addCourseVideo:{}", video.toString());
+        return courseService.addCourseVideo(video);
+    }
+
+    @RequestMapping(value = "/getCourseVideo", method = RequestMethod.GET)
+    public String getCourseVideo(HttpServletResponse response, String filepath) {
+        logger.info("filePath:{}", filepath);
+        OutputStream outputStream=null;
+        try{
+            byte[] bytes = courseService.loadCourseImg(filepath);
+            response.setContentType("video/mp4");
+            outputStream = response.getOutputStream();
+            outputStream.write(bytes);
+            outputStream.flush();
+            outputStream.close();
+        }catch (Exception e){
+            logger.error("getCourseVideo",e);
+        }
+        return "";
     }
 
 }

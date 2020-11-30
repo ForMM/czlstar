@@ -91,32 +91,37 @@
 
 
 
-        <table tableName="t_course_purpose" domainObjectName="CoursePurpose" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true">
-            <property name="useActualColumnNames" value="false" />
-            <!-- 数据库表主键 -->
-            <generatedKey column="id" sqlStatement="Mysql" identity="true" />
-        </table>
-        <table tableName="t_course_object" domainObjectName="CourseObject" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true">
-            <property name="useActualColumnNames" value="false" />
-            <!-- 数据库表主键 -->
-            <generatedKey column="id" sqlStatement="Mysql" identity="true" />
-        </table>
-        <table tableName="t_course_harvest" domainObjectName="CourseHarvest" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true">
-            <property name="useActualColumnNames" value="false" />
-            <!-- 数据库表主键 -->
-            <generatedKey column="id" sqlStatement="Mysql" identity="true" />
-        </table>
-        <table tableName="t_course_outline" domainObjectName="CourseOutline" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true">
-            <property name="useActualColumnNames" value="false" />
-            <!-- 数据库表主键 -->
-            <generatedKey column="id" sqlStatement="Mysql" identity="true" />
-        </table>
-        <table tableName="t_course_case" domainObjectName="CourseCase" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true">
-            <property name="useActualColumnNames" value="false" />
-            <!-- 数据库表主键 -->
-            <generatedKey column="id" sqlStatement="Mysql" identity="true" />
-        </table>
+<!--        <table tableName="t_course_purpose" domainObjectName="CoursePurpose" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true">-->
+<!--            <property name="useActualColumnNames" value="false" />-->
+<!--            &lt;!&ndash; 数据库表主键 &ndash;&gt;-->
+<!--            <generatedKey column="id" sqlStatement="Mysql" identity="true" />-->
+<!--        </table>-->
+<!--        <table tableName="t_course_object" domainObjectName="CourseObject" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true">-->
+<!--            <property name="useActualColumnNames" value="false" />-->
+<!--            &lt;!&ndash; 数据库表主键 &ndash;&gt;-->
+<!--            <generatedKey column="id" sqlStatement="Mysql" identity="true" />-->
+<!--        </table>-->
+<!--        <table tableName="t_course_harvest" domainObjectName="CourseHarvest" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true">-->
+<!--            <property name="useActualColumnNames" value="false" />-->
+<!--            &lt;!&ndash; 数据库表主键 &ndash;&gt;-->
+<!--            <generatedKey column="id" sqlStatement="Mysql" identity="true" />-->
+<!--        </table>-->
+<!--        <table tableName="t_course_outline" domainObjectName="CourseOutline" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true">-->
+<!--            <property name="useActualColumnNames" value="false" />-->
+<!--            &lt;!&ndash; 数据库表主键 &ndash;&gt;-->
+<!--            <generatedKey column="id" sqlStatement="Mysql" identity="true" />-->
+<!--        </table>-->
+<!--        <table tableName="t_course_case" domainObjectName="CourseCase" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true">-->
+<!--            <property name="useActualColumnNames" value="false" />-->
+<!--            &lt;!&ndash; 数据库表主键 &ndash;&gt;-->
+<!--            <generatedKey column="id" sqlStatement="Mysql" identity="true" />-->
+<!--        </table>-->
 
+        <table tableName="t_course_video" domainObjectName="CourseVideo" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true">
+            <property name="useActualColumnNames" value="false" />
+            <!-- 数据库表主键 -->
+            <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+        </table>
 
     </context>
 </generatorConfiguration>

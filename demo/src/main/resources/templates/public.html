@@ -2,191 +2,148 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+<meta charset="UTF-8">
+<title>创造力星球-专注于少儿编程</title>
+<link data-n-head="ssr" rel="icon" type="image/x-icon" href="/static/img/logo_icon.png">
 </head>
 
 <body id="page-top">
-    <div th:fragment="public_top">
-        <div id="top_banner" data-v-7e6e90a2>
-        </div>
+	<div th:fragment="public_top">
+		<div id="top_banner" data-v-7e6e90a2></div>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-linka fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger header-container_logo-index" href="home">创造力星球</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+		<nav
+			class="navbar navbar-expand-lg navbar-dark bg-dark navbar-linka fixed-top"
+			id="mainNav">
+			<div class="container">
+				<a
+					class="navbar-brand js-scroll-trigger header-container_logo-index"
+					href="home">创造力星球</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarResponsive" aria-controls="navbarResponsive"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger nav-linka" th:class="${isMobile}?'nav-link nav-linka-m':'nav-link nav-linka'" href="home">首页</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger nav-linka" th:class="${isMobile}?'nav-link nav-linka-m':'nav-link nav-linka'" href="self-course?type=1">核心课程</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger nav-linka" th:class="${isMobile}?'nav-link nav-linka-m':'nav-link nav-linka'" href="self-course?type=2">精品课程</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger nav-linka" th:class="${isMobile}?'nav-link nav-linka-m':'nav-link nav-linka'" href="self-course?type=3">体验课</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!--    <div id="header" class="header-module" th:if="${not isMobile}">-->
-        <!--        <div class="header-container header-container-normal">-->
-        <!--            <div class="header-container-inner">-->
-        <!--                <a href="home" title="创造力星球首页" alt="创造力星球官网" class="header-container_logo-index">创造力星球首页</a>-->
-        <!--                <div class="header-container_nav-container">-->
-        <!--                    <a href="home" class="header-container_nav-container_a header-container_nav-container_a__active"-->
-        <!--                       th:class="${type}==null ? 'header-container_nav-container_a header-container_nav-container_a__active' : 'header-container_nav-container_a'">首页</a>-->
-        <!--                    <a href="self-course?type=1" target="_blank" class="header-container_nav-container_a"-->
-        <!--                       th:class="${type}==1 ? 'header-container_nav-container_a header-container_nav-container_a__active' : 'header-container_nav-container_a'">核心课程</a>-->
-        <!--                    <a href="self-course?type=2" target="_blank" class="header-container_nav-container_a"-->
-        <!--                       th:class="${type}==2 ? 'header-container_nav-container_a header-container_nav-container_a__active' : 'header-container_nav-container_a'">精品课程</a>-->
-        <!--                    <a href="self-course?type=3" target="_blank" class="header-container_nav-container_a"-->
-        <!--                       th:class="${type}==3 ? 'header-container_nav-container_a header-container_nav-container_a__active' : 'header-container_nav-container_a'">PBL课程</a>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <!--    </div>-->
-
-
-        <!--    <div id="mobile-header" th:if="${isMobile}">-->
-        <!--        <div class="header-container-m"><a href="https://www.sanjieke.cn" title="三节课首页"-->
-        <!--                                           class="header-container-m_logo"></a>-->
-        <!--            <div class="header-container-m_meun-btn">-->
-        <!--                <div class="header-container-box"></div>-->
-        <!--                <div class="header-container-m_meun-content header-container-m_menu-list">-->
-        <!--                    <div class="header-top">-->
-        <!--                        <div class="header-container-m_meun-btn"></div>-->
-        <!--                    </div>-->
-        <!--                    <div class="nav-list-header-m_menu"><a href="https://www.sanjieke.cn" title="三节课首页"-->
-        <!--                                                           class="header-container-m_menu-list_li">首页</a> <a-->
-        <!--                            href="https://www.sanjieke.cn/self_study_course/0/0"-->
-        <!--                            class="header-container-m_menu-list_li">精品自学课</a><a href="https://www.sanjieke.cn/free.html"-->
-        <!--                                                                                class="header-container-m_menu-list_li">限免课程</a><a-->
-        <!--                            href="https://b.sanjieke.cn/" class="header-container-m_menu-list_li">企业服务</a><a-->
-        <!--                            href="https://www.sanjieke.cn/youzhao" class="header-container-m_menu-list_li">有招</a>-->
-        <!--                        &lt;!&ndash;&ndash;&gt;</div>-->
-        <!--                    <div class="btn-lit-bottom"><a href="https://passport.sanjieke.cn/account?channel=youshangjiao"-->
-        <!--                                                   name="denglu" rel="nofollow"-->
-        <!--                                                   class="header-container-m_menu-list_li header-denglu-label">登录</a> <a-->
-        <!--                            href="https://passport.sanjieke.cn/account/sign_up?channel=youshangjiao" name="zhuce"-->
-        <!--                            rel="nofollow" class="header-container-m_menu-list_li header-mianfeizhuce-label">免费注册</a>-->
-        <!--                    </div> &lt;!&ndash;&ndash;&gt;</div>-->
-        <!--            </div> &lt;!&ndash;&ndash;&gt;</div>-->
-        <!--    </div>-->
-    </div>
-
-    <div th:fragment="public_footer">
-        <div id="footer" th:if="${not isMobile}">
-            <div class="footer_center">
-                <div class="footer_container">
-                    <div class="bottom-left">
-                        <div class="sjk-logo"></div>
-                        <div class="sjk-slogan">优质的线下教育培训机构</div>
-                    </div>
-                    <div class="bottom-line"></div>
-                    <div class="bottom-middle">
-                        <ul class="middle-content">
-                            <li class="understand">了解创造力星球</li>
-                            <li><a href="https://mp.weixin.qq.com/s/w5vNkbJH2A5naV4sAYEHgg" target="_blank">关于我们</a>
-                            </li>
-                            <!--                            <li class="understand second">帮助与支持</li>-->
-                            <!--                            <li class="second">-->
-                            <!--                                <a href="https://www.sanjieke.cn/about.html/concact_us#concact_us" target="_blank">联系我们</a>-->
-                            <!--                            </li>-->
-                            <!--                            <li class="second">-->
-                            <!--                                <a href="https://classroom.sanjieke.cn/udesk_view" target="_blank">反馈建议</a>-->
-                            <!--                            </li>-->
-                            <!--                            <li class="second">-->
-                            <!--                                <a href="https://www.sanjieke.cn/about.html/concact_us#report" target="_blank">侵权举报</a>-->
-                            <!--                            </li>-->
-                        </ul>
-                    </div>
-                    <div class="bottom-right">
-                        <div class="app-sjk">
-                            <img src="/static/img/qrcode.png" alt="微信二维码 get" class="wechat-code" />
-                            <div class="intro-app">
-                                <div class="tips">创造力星球课程顾问</div>
-                                <div class="tips">世界任你创造</div>
-                            </div>
-                        </div>
-                        <div class="app-sjk">
-                            <!--                            <img src="https://cdn.sanjieke.cn/upload/image/200204/5e390e72189ea.png" alt="创造力星球服务号" class="wechat-code"/>-->
-                            <div class="intro-app">
-                                <!--                            <div class="tips">创造力星球官方公众号</div>-->
-                                <!--                            <div class="tips">世界任你创造</div>-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-bottom">
-                    <span>2013-2020 创造力星球信息咨询（北京）有限公司 版权所有</span>
-                    <span>
-                        <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802021751"
-                            target="_blank" rel="nofollow">
-                            <i></i>京公网安备 11010802021751号
-                        </a>
-                    </span>
-                    <span> ICP证：京B2-20190453</span>
-                    <span> 
-                        <a href="http://www.beian.miit.gov.cn/" targat="_blank">京ICP备16034860号-1</a>
-                    </span>
-                </div>
-            </div>
-        </div>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link  nav-linka"
+							th:class="${isMobile}?'nav-linka-m':'nav-linka'" href="home">首页</a>
+						</li>
+						<li class="nav-item"><a
+							class="nav-link js-scroll-trigger nav-linka"
+							th:class="${isMobile}?'nav-link nav-linka-m':'nav-link nav-linka'"
+							href="self-course?type=1">核心课程</a></li>
+						<li class="nav-item"><a
+							class="nav-link js-scroll-trigger nav-linka"
+							th:class="${isMobile}?' nav-link nav-linka-m':'nav-link nav-linka'"
+							href="self-course?type=2">精品课程</a></li>
+						<li class="nav-item"><a
+							class="nav-link js-scroll-trigger nav-linka"
+							th:class="${isMobile}?'nav-link nav-linka-m':'nav-link nav-linka'"
+							href="self-course?type=3">体验课程</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--    <div id="header" class="header-module" th:if="${not isMobile}">-->
+		<!--        <div class="header-container header-container-normal">-->
+		<!--            <div class="header-container-inner">-->
+		<!--                <a href="home" title="创造力星球首页" alt="创造力星球官网" class="header-container_logo-index">创造力星球首页</a>-->
+		<!--                <div class="header-container_nav-container">-->
+		<!--                    <a href="home" class="header-container_nav-container_a header-container_nav-container_a__active"-->
+		<!--                       th:class="${type}==null ? 'header-container_nav-container_a header-container_nav-container_a__active' : 'header-container_nav-container_a'">首页</a>-->
+		<!--                    <a href="self-course?type=1" target="_blank" class="header-container_nav-container_a"-->
+		<!--                       th:class="${type}==1 ? 'header-container_nav-container_a header-container_nav-container_a__active' : 'header-container_nav-container_a'">核心课程</a>-->
+		<!--                    <a href="self-course?type=2" target="_blank" class="header-container_nav-container_a"-->
+		<!--                       th:class="${type}==2 ? 'header-container_nav-container_a header-container_nav-container_a__active' : 'header-container_nav-container_a'">精品课程</a>-->
+		<!--                    <a href="self-course?type=3" target="_blank" class="header-container_nav-container_a"-->
+		<!--                       th:class="${type}==3 ? 'header-container_nav-container_a header-container_nav-container_a__active' : 'header-container_nav-container_a'">PBL课程</a>-->
+		<!--                </div>-->
+		<!--            </div>-->
+		<!--        </div>-->
+		<!--    </div>-->
 
 
-        <div id="mobile-footer" th:if="${isMobile}">
-            <div class="footer_center">
-                <div class="footer-top">
-                    <div class="logo">
-                        <img src="/static/img/logo.jpeg" alt="" />
-                    </div>
-                    <div class="sjk-slogan">专注于少儿编程</div>
-                </div>
-                <div class="footer_con">
-                    <div class="footer-con-left">
-                        <ul class="con-list">
-                            <li>
-                                <a href="https://www.sanjieke.cn/about.html" target="_blank">关于我们</a>
-                            </li>
-                            <div class="line"></div>
-                            <!--
-                        <li>
-                            <a href="https://www.sanjieke.cn/about.html#media" target="_blank">媒体报道</a>
-                        </li>-->
-                            <div class="line"></div>
-                            <!--                        <li class="third"><a href="https://blog.sanjieke.cn" target="_blank">互联网干货</a></li>-->
-                            <!--                        <li class="second-line"><a href="https://passport.sanjieke.cn/account">反馈建议</a></li>-->
-                            <!--                        <div class="line"></div>-->
-                            <!--                        <li class="second-line"><a href="https://www.sanjieke.cn/about.html/concact_us#concact_us"-->
-                            <!--                                                   target="_blank">联系我们</a></li>-->
-                            <!--                        <div class="line"></div>-->
-                            <!--                        <li class="second-line third"><a href="https://www.sanjieke.cn/about.html/concact_us#report"-->
-                            <!--                                                         target="_blank">侵权举报</a></li>-->
-                        </ul>
-                        <a href="http://download.weigongju.org/dingyue" class="app-download"><span>世界任你创造</span></a>
-                    </div>
-                    <div class="footer-con-right"><img src="/static/img/qrcode.png" alt="创造力星球官方公众号" class="wechat-code">
-                        <div class="tips">创造力星球官方公众号</div>
-                    </div>
-                </div>
-                <div class="footer_record"><span>2013-2020 创造力星球有限公司 版权所有</span> <span><a
-                            href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802021751"
-                            target="_blank" rel="nofollow"><i></i>京公网安备 11010802021751号</a></span>
-                    <span>ICP证：京B2-20190453</span> <span> <a href="http://www.beian.miit.gov.cn/"
-                            targat="_blank">京ICP备16034860号-1</a></span></div>
-            </div>
-        </div>
+		<!--    <div id="mobile-header" th:if="${isMobile}">-->
+		<!--        <div class="header-container-m"><a href="https://www.sanjieke.cn" title="三节课首页"-->
+		<!--                                           class="header-container-m_logo"></a>-->
+		<!--            <div class="header-container-m_meun-btn">-->
+		<!--                <div class="header-container-box"></div>-->
+		<!--                <div class="header-container-m_meun-content header-container-m_menu-list">-->
+		<!--                    <div class="header-top">-->
+		<!--                        <div class="header-container-m_meun-btn"></div>-->
+		<!--                    </div>-->
+		<!--                    <div class="nav-list-header-m_menu"><a href="https://www.sanjieke.cn" title="三节课首页"-->
+		<!--                                                           class="header-container-m_menu-list_li">首页</a> <a-->
+		<!--                            href="https://www.sanjieke.cn/self_study_course/0/0"-->
+		<!--                            class="header-container-m_menu-list_li">精品自学课</a><a href="https://www.sanjieke.cn/free.html"-->
+		<!--                                                                                class="header-container-m_menu-list_li">限免课程</a><a-->
+		<!--                            href="https://b.sanjieke.cn/" class="header-container-m_menu-list_li">企业服务</a><a-->
+		<!--                            href="https://www.sanjieke.cn/youzhao" class="header-container-m_menu-list_li">有招</a>-->
+		<!--                        &lt;!&ndash;&ndash;&gt;</div>-->
+		<!--                    <div class="btn-lit-bottom"><a href="https://passport.sanjieke.cn/account?channel=youshangjiao"-->
+		<!--                                                   name="denglu" rel="nofollow"-->
+		<!--                                                   class="header-container-m_menu-list_li header-denglu-label">登录</a> <a-->
+		<!--                            href="https://passport.sanjieke.cn/account/sign_up?channel=youshangjiao" name="zhuce"-->
+		<!--                            rel="nofollow" class="header-container-m_menu-list_li header-mianfeizhuce-label">免费注册</a>-->
+		<!--                    </div> &lt;!&ndash;&ndash;&gt;</div>-->
+		<!--            </div> &lt;!&ndash;&ndash;&gt;</div>-->
+		<!--    </div>-->
+	</div>
 
-    </div>
-    <script src="//code.tidio.co/szureun5buousz5t4ohd6iqtm0pjdvsg.js" async></script>
+	<div th:fragment="public_footer">
+		<div id="footer" th:if="${not isMobile}">
+			<div class="footer_center">
+				<div class="footer_container">
+					<div class="bottom-left">
+						<div class="sjk-logo"></div>
+						<div class="sjk-slogan">优质的线下教育培训机构</div>
+					</div>
+					<div class="bottom-line"></div>
+					<div class="bottom-middle">
+						<ul class="middle-content">
+							<li class="understand">了解创造力星球</li>
+							<li><a
+								href="https://mp.weixin.qq.com/s/w5vNkbJH2A5naV4sAYEHgg"
+								target="_blank">关于我们</a></li>
+							<!--                            <li class="understand second">帮助与支持</li>-->
+							<!--                            <li class="second">-->
+							<!--                                <a href="https://www.sanjieke.cn/about.html/concact_us#concact_us" target="_blank">联系我们</a>-->
+							<!--                            </li>-->
+							<!--                            <li class="second">-->
+							<!--                                <a href="https://classroom.sanjieke.cn/udesk_view" target="_blank">反馈建议</a>-->
+							<!--                            </li>-->
+							<!--                            <li class="second">-->
+							<!--                                <a href="https://www.sanjieke.cn/about.html/concact_us#report" target="_blank">侵权举报</a>-->
+							<!--                            </li>-->
+						</ul>
+					</div>
+					<div class="bottom-right">
+						<div class="app-sjk">
+							<img src="/static/img/qrcode.png" alt="微信二维码 get"
+								class="wechat-code" />
+							<div class="intro-app">
+								<div class="tips">创造力星球课程顾问</div>
+								<div class="tips">世界任你创造</div>
+							</div>
+						</div>
+					
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<span>2018-2020 创造力星球信息咨询（北京）有限公司 版权所有</span> 
+					<!--<span> <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802021751"-->
+					<!--	target="_blank" rel="nofollow"> <i></i>京公网安备 11010802021751号                      -->
+					<!--</a>                                                                                        -->
+					<!--</span>                                                                                     -->
+					<!--<span> ICP证：京B2-20190453</span> <span> <a                                                -->
+					<!--	href="http://www.beian.miit.gov.cn/" targat="_blank">京ICP备16034860号-1</a>            -->
+					<!--</span>                                                                                     -->
+				</div>
+			</div>
+		</div>
+
+	</div>
 </body>
 
 </html>

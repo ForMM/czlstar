@@ -28,8 +28,8 @@
 }
 
 .moduleSpace {
-    padding-top: 24px;
-    padding-bottom: 24px
+    padding-top: 22px;
+    padding-bottom: 26px;
 }
 
 .moduleSpace:first-child {
@@ -111,10 +111,10 @@
 
 .sjk_cd_moduleInnerTitleThin {
     color: #323e48;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 22px;
     font-weight: 700;
-    white-space: pre-line;
+    white-space: pre-line
 }
 
 @media screen and (max-width: 768px) {

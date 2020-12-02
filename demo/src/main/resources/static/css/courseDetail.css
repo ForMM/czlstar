@@ -1,17 +1,8 @@
-.coursePurposeContent {
-	font-size: 14px;
-	line-height: 28px;
-	white-space: pre-line;
+.coursePurposeContent{
+    font-size: 14px;
+    line-height: 28px;
+    white-space: pre-line;
 }
-
-.active {
-	display: block;
-}
-
-.hidden {
-	display: none;
-}
-
 .demo {
-	cursor: pointer;
-}
+            cursor: pointer;
+        }

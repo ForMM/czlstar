@@ -1,60 +1,33 @@
 <!doctype html>
 <html data-n-head-ssr xmlns:th="http://www.thymeleaf.org">
-
 <head>
-<title>创造力星球-专注于少儿编程</title>
-<meta data-n-head="ssr" charset="utf-8">
-<meta data-n-head="ssr" name="viewport"
-	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<meta data-n-head="ssr" http-equiv="X-UA-Compatible" content="ie=edge">
-<meta data-n-head="ssr" data-hid="description" name="description"
-	content="创造力星球-专注于少儿编程">
-<meta data-n-head="ssr" data-hid="keywords" name="keywords"
-	content="创造力星球-专注于少儿编程">
+    <title>创造力星球-专注于少儿编程</title>
+    <meta data-n-head="ssr" charset="utf-8">
+    <meta data-n-head="ssr" name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta data-n-head="ssr" http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta data-n-head="ssr" data-hid="description" name="description"
+          content="创造力星球-专注于少儿编程">
+    <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="创造力星球-专注于少儿编程">
+    <link data-n-head="ssr" rel="icon" type="image/x-icon" href="/static/img/logo_icon.png">
 
-<link data-n-head="ssr" rel="icon" type="image/x-icon"
-	href="//img.sanjieke.cn/common/favicon.ico">
+    <link href="../static/nava/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/nava/css/scrolling-nav.css" rel="stylesheet">
+    <script src="../static/nava/vendor/jquery/jquery.min.js"></script>
+    <script src="../static/nava/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<link href="../static/nava/vendor/bootstrap/css/bootstrap.min.css"
-	rel="stylesheet">
-<link href="../static/nava/css/scrolling-nav.css" rel="stylesheet">
-<script src="../static/nava/vendor/jquery/jquery.min.js"></script>
-<script src="../static/nava/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="../static/nava/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../static/nava/js/scrolling-nav.js"></script>
 
-<link
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-	rel="stylesheet">
-	
-	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	
-	
-
-<!-- Plugin JavaScript -->
-<script src="../static/nava/vendor/jquery-easing/jquery.easing.min.js"></script>
-<script src="../static/nava/js/scrolling-nav.js"></script>
-<script src="../static/nava/js/index.js"></script>
-
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet"
-	href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
-<script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
-<script
-	src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-
-<link rel="preload" href="../static/css/vendors.app.css?v=21b6433"
-	as="style">
-<link rel="stylesheet" href="../static/css/vendors.app.css">
-<link rel="stylesheet" href="../static/css/home.css">
-<link rel="stylesheet" href="../static/css/app.css">
-<link rel="stylesheet" href="../static/css/1.css">
-<link rel="stylesheet" href="../static/css/61.css">
-<link rel="stylesheet" href="../static/css/courseDetail.css">
-
-<!-- style -->
-
+    <link rel="preload" href="../static/css/vendors.app.css?v=21b6433" as="style">
+    <link rel="stylesheet" href="../static/css/vendors.app.css">
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="stylesheet" href="../static/css/app.css">
+    <link rel="stylesheet" href="../static/css/1.css">
+    <link rel="stylesheet" href="../static/css/61.css">
+    <link rel="stylesheet" href="../static/css/courseDetail.css">
+    
 <style>
 #open {
 	position: absolute;
@@ -64,251 +37,160 @@
 	height: 50px;
 }
 </style>
-<!-- style -->
+    
 </head>
-
 <body>
-	<div data-server-rendered="true" id="__nuxt">
-		<!---->
-		<div id="__layout">
-			<div id="page-main" style="margin-top: 0px">
-				<div id="top_banner" data-v-7e6e90a2></div>
-				<div th:insert="~{public :: public_top}"></div>
-				<div id="index" data-v-efa69a38>
-				<div class="courseDetailContainer" th:id="${courseDetail.course.id}">
-					<div>
-						<div class="module-block module-20071">
-							<div class="bannerBg" th:style="'background:url(course/loadCourseImg?uuid='+${courseDetail.course.bgImg}+') no-repeat 50%'">
-							</div>
-						</div>
-					</div>
-					<div>
-						<!---->
-					</div>
-					<div id="a1">
-						
-					</div>
-					<div>
-						<div class="module-block module-20070 moduleSpace">
-							<div class="module-20070-content1">
-								<span class="innerIcon"></span> <span
-									class="innerTitle sjk_cd_textH1"
-									th:text="${courseDetail.coursePurpose!=null?courseDetail.coursePurpose.title:'什么是运营新人启航计划？'}">什么是scratch
-									图形化编程？</span>
-							</div>
-							<!---->
-						</div>
-					</div>
-					<div>
-						<div class="module-block module-20047 moduleSpace">
-							<div class="imgContentContainer moduleConContainerCommonStyle">
-								<div class="imgContentContainer-left">
-									<img
-										th:src="${courseDetail.coursePurpose}==null ? 'img/favicon.png' : 'course/loadCourseImg?uuid='+${courseDetail.coursePurpose.photo}" />
-								</div>
-								<!--  <div class="imgContentContainer-right">
-                                <h1 class="contentTitle sjk_cd_moduleInnerTitle" th:text="${courseDetail.coursePurpose!=null?courseDetail.coursePurpose.title:'什么是运营新人启航计划？'}"></h1>
-                                <p class="contentP sjk_cd_mainText1">
-                                <div><br></div>
-                                <div class="coursePurposeContent" th:text="${courseDetail.coursePurpose!=null?courseDetail.coursePurpose.content:'什么是运营新人启航计划？运营新人启航计划：运营新人启航计划：运营新人启航计划：运营新人启航计划：运营新人启航计划：'}">运营新人启航计划：</div>
-                                </p>
-                            </div>-->
-							</div>
-						</div>
-					</div>
-					<div id="a2">
-						
-					</div>
-					<div th:style="${courseDetail.course.type}==1 ? '' : 'display:none'">
-						<!-- test1 -->
-						<div>
-							<div class="module-block module-20045 moduleSpace">
-								<div class="module-20045-content1 module-20045-marginBottom">
-									<span class="innerIcon"></span> <span
-										class="innerTitle sjk_cd_textH1">这门课程适合谁</span>
-								</div>
-								<div class="module-20045-content2" style="display: none">
-									<span class="innerTitle sjk_cd_textH2">7~16岁的青少年，缺乏逻辑，理科成绩弱</span>
-								</div>
-							</div>
-						</div>
-						<div>
-							<div class="module-block module-20049 moduleSpace">
-								<div class="suitPeopleContainer moduleConContainerCommonStyle">
-									<div class="suitPeopleItem quadraItem"
-										th:each="obj,iterStat:${courseDetail.courseObjectList}">
-										<div class="itemImg">
-											<img
-												th:src="'/static/img/object_'+${iterStat.index+1}+'.png'"
-												alt />
-										</div>
-										<div class="itemContent">
-											<p class="itemP1 sjk_cd_moduleInnerTitle"
-												th:text="${obj.object}">没方向</p>
-											<p class="itemP2 sjk_cd_mainText2" th:text="${obj.content}">运营种类千千万，不知道自己适合哪一个</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="module-block module-20084 moduleSpace">
-							<a href="javascript:OpenDiv();" class="serviceButton">你适合学这门课程吗</a>
-							<!---->
-						</div>
-					</div>
-					<div id="a3">
-						
-					</div>
-					<div>
-						<div class="module-block module-20045 moduleSpace">
-							<div class="module-20045-content1 module-20045-marginBottom">
-								<span class="innerIcon"></span> <span
-									class="innerTitle sjk_cd_textH1">你的孩子适合学习这门课程吗？</span>
-							</div>
-							<div class="module-20045-content2">
-								<span class="innerTitle sjk_cd_textH2">孩子可以获得什么？</span>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="module-block module-20072 moduleSpace">
-							<div class="courseGetContainer moduleConContainerCommonStyle">
-								<div class="courseGet1 tripleItem1">
-									<div class="courseGet1Item moduleCommonBoxShadow"
-										th:each="obj,iterStat:${courseDetail.courseHarvestList}">
-										<div class="itemTop">
-											<div class="itemTop-img">
-												<img
-													th:src="'/static/img/courseharvest_'+${iterStat.index+1}+'.png'"
-													alt />
-											</div>
-											<p th:text="${obj.object}">从底层理解运营，建立运营全局观</p>
-										</div>
-										<div class="itemBottom sjk_cd_mainText3"
-											th:text="${obj.content}">多年沉淀的系统的运营方法论，让你不再碎片化的理解运营，盲目深陷执行岗浪费时间
-										</div>
-									</div>
-								</div>
-								<!---->
-							</div>
-						</div>
-					</div>
-					<div id="a4">
-						
-					</div>
-					<div>
-						<div class="module-block module-20045 moduleSpace">
-							<div class="module-20045-content1">
-								<span class="innerIcon"></span> <span
-									class="innerTitle sjk_cd_textH1">课程大纲</span>
-							</div>
-							<!---->
-						</div>
-					</div>
-					<div>
-						<div class="module-block module-20054 moduleSpace">
-							<div class="courseOutlineContainer moduleConContainerCommonStyle">
-								<div class="outlineListContainer"
-									th:each="obj,iterStat:${courseDetail.courseOutlineList}">
-									<div class="outlineTitle">
-
-										<span class="titleCon1 sjk_cd_moduleInnerTitleThin"
-											th:text="${obj.courseIndex}">导论</span> <span
-											class="titleCon2 sjk_cd_moduleInnerTitleThin"
-											th:text="${obj.title}">【认识运营】运营岗位介绍及职业选择建议</span>
-									</div>
-									<!---->
-									<div class="outlineContent demo">
-										<div style="display: none;" class="outlineLeft"
-											th:text="${obj.content}">
-											1. 了解商业产品，完成商业产品三要素能力训练 <br>2. 学习当前市场商业产品类型，掌握商业产品分类 <br>3.
-											根据用户行为找到商业化切入点，完成商业切入点能力训练 <br>4. 了解互联网广告形态和参与角色演变 <br>5.
-											掌握广告收费规则以及计费方式 <br>6. 从一线公司角度，了解商业产品日常工作 <br>7.
-											掌握规划前期商业产品定位方法 <br>8. 使用用户故事的方法打动客户 <br>9.
-											从商业产品经理角度，学会用户思维
-										</div>
-										<!---->
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="module-block module-20084 moduleSpace">
-							<a href="javascript:OpenDiv();" class="serviceButton">了解详细课程内容</a>
-							<!--弹窗-->
-							<div class="consultantCodePopup_mark" id="div1"
-								style="display: none">
-								<div class="consultantCodePopup">
-									<span class="consultantCodePopup-close"
-										onclick="javascript:CloseDiv();"></span>
-									<p class="consultantCodePopup-p1">欢迎扫码咨询</p>
-									<p class="consultantCodePopup-p2">购课、选课遇到问题？扫码添加学习顾问为你解答！</p>
-									<img src="/static/img/qrcode.png" alt=""
-										class="consultantCodePopup-img">
-									<p class="consultantCodePopup-p3">添加后可直接留言，顾问会在24小时内回复！</p>
-									<p class="consultantCodePopup-p3">（节假日期间回复较慢还请谅解）</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div id="a5">
-						
-					</div>
-					<div>
-						<div class="module-block module-20045 moduleSpace">
-							<div class="module-20045-content1 module-20045-marginBottom">
-								<span class="innerIcon"></span> <span
-									class="innerTitle sjk_cd_textH1">授课教师</span>
-							</div>
-							<div class="module-20045-content2">
-								<span class="innerTitle sjk_cd_textH2">强大导师阵容，手把手助你成为编程超新星</span>
-							</div>
-						</div>
-					</div>
-					<div th:each="obj,iterStat:${courseDetail.courseTeacherList}">
-						<div class="module-block module-20053 moduleSpace">
-							<div class="module20053bg">
-								<div class="introTeacherContainer moduleConContainerCommonStyle">
-									<div class="introTeacherContainerPc">
-										<div class="teacherAvator">
-											<img
-												th:src="${obj.photo}==null ? 'img/favicon.png' : 'course/loadCourseImg?uuid='+${obj.photo}" />
-										</div>
-
-									</div>
-									<!--    <div class="introTeacherContainerMobile">
-                                    <div class="teacherName sjk_cd_moduleInnerTitleThin" th:text="'课程导师 - '+${obj.name}">课程导师 - 黄有璨</div>
-                                    <div class="teacherContainerCenter">
-                                        <div class="teacherAvator">
-                                            <img th:src="${obj.photo}==null ? 'img/favicon.png' : 'course/loadCourseImg?uuid='+${obj.photo}"/>
+<div data-server-rendered="true" id="__nuxt"><!---->
+    <div id="__layout">
+        <div id="page-main" style="margin-top:90px">
+            <div id="top_banner" data-v-7e6e90a2><!----></div>
+            <div th:insert="~{public :: public_top}"></div>
+            <div class="courseDetailContainer">
+                <div>
+                    <div class="module-block module-20071">
+                        <div class="bannerBg" th:style="'background:url(course/loadCourseImg?uuid='+${courseDetail.course.bgImg}+') no-repeat 50%'">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div><!----></div>
+                <div>
+                    <div class="module-block module-20070 moduleSpace">
+                        <div class="module-20070-content1"><span class="innerIcon"></span> 
+                        <span class="innerTitle sjk_cd_textH1" th:text="${courseDetail.coursePurpose!=null?courseDetail.coursePurpose.title:'什么是运营新人启航计划？'}">创造力星球</span></div> <!----></div>
+                </div>
+                <div>
+                    <div class="module-block module-20047 moduleSpace">
+                        <div class="imgContentContainer moduleConContainerCommonStyle">
+                            <div class="imgContentContainer-left">
+                                <img th:src="${courseDetail.coursePurpose}==null ? 'img/favicon.png' : 'course/loadCourseImg?uuid='+${courseDetail.coursePurpose.photo}"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div th:style="${courseDetail.course.type}==1 ? '' : 'display:none'">
+                
+                <div>
+                    <div class="module-block module-20045 moduleSpace">
+                        <div class="module-20045-content1 module-20045-marginBottom">
+                            <span class="innerIcon"></span>
+                            <span class="innerTitle sjk_cd_textH1">这门课程适合谁</span>
+                        </div>
+                        <div class="module-20045-content2">
+                            <span class="innerTitle sjk_cd_textH2">7~16岁的青少年，缺乏逻辑，理科成绩弱</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="module-block module-20049 moduleSpace">
+                        <div class="suitPeopleContainer moduleConContainerCommonStyle">
+                            <div class="suitPeopleItem quadraItem" th:each="obj,iterStat:${courseDetail.courseObjectList}">
+                                <div class="itemImg">
+                                    <img th:src="'/static/img/object_'+${iterStat.index+1}+'.png'" alt />
+                                </div>
+                                <div class="itemContent" >
+                                    <p class="itemP1 sjk_cd_moduleInnerTitle" th:text="${obj.object}">创造力星球</p>
+                                    <p class="itemP2 sjk_cd_mainText2" th:text="${obj.content}">创造力星球</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+                
+                <div>
+                    <div class="module-block module-20084 moduleSpace">
+                        <a href="javascript:OpenDiv();" class="serviceButton">你的孩子适合学习这门课程吗？</a> <!---->
+                    </div>
+                </div>
+                
+                
+                <div th:style="${courseDetail.course.type}==1 ? '' : 'display:none'">
+                    <div class="module-block module-20045 moduleSpace">
+                        <div class="module-20045-content1 module-20045-marginBottom">
+                            <span class="innerIcon"></span>
+                            <span class="innerTitle sjk_cd_textH1">孩子可以获得什么？</span>
+                        </div>
+                    </div>
+                
+                    <div class="module-block module-20072 moduleSpace">
+                        <div class="courseGetContainer moduleConContainerCommonStyle">
+                            <div class="courseGet1 tripleItem1">
+                                <div class="courseGet1Item moduleCommonBoxShadow" th:each="obj,iterStat:${courseDetail.courseHarvestList}">
+                                    <div class="itemTop">
+                                        <div class="itemTop-img">
+                                            <img th:src="'/static/img/courseharvest_'+${iterStat.index+1}+'.png'" alt />
                                         </div>
-                                        <div class="teacherTitle sjk_cd_mainText1" th:text="${obj.profession}">创造力星球联合创始人；创造力星球运营品类导师，学员遍布 BAT、TMD
-                                            等各大互联网公司
-                                        </div>
+                                        <p th:text="${obj.object}">创造力星球</p></div>
+                                    <div class="itemBottom sjk_cd_mainText3" th:text="${obj.content}">创造力星球</div>
+                                </div>
+                            </div> <!---->
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div>
+                    <div class="module-block module-20045 moduleSpace">
+                        <div class="module-20045-content1"><span class="innerIcon"></span> <span
+                                class="innerTitle sjk_cd_textH1">课程大纲</span></div> <!----></div>
+                </div>
+                <div>
+                    <div class="module-block module-20054 moduleSpace">
+                        <div class="courseOutlineContainer moduleConContainerCommonStyle">
+                            <div class="outlineListContainer " th:each="obj,iterStat:${courseDetail.courseOutlineList}">
+                                <div class="outlineTitle">
+                                    <span class="titleCon1 sjk_cd_moduleInnerTitleThin" th:text="${obj.courseIndex}">创造力星球</span>
+                                    <span class="titleCon2 sjk_cd_moduleInnerTitleThin" th:text="${obj.title}">创造力星球</span>
+                                </div> <!---->
+                                <div class="outlineContent demo">
+                                    <div style="display:none;" class="outlineLeft" th:text="${obj.content}">
+                                        1. 创造力星球
+                                        <br>2.创造力星球
+                                        <br>3.创造力星球
+                                        <br>4.创造力星球
+                                        <br>5.创造力星球
+                                        <br>6.创造力星球
+                                        <br>7.创造力星球
+                                        <br>8.创造力星球
+                                        <br>9.创造力星球
+                                    </div> <!---->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="module-block module-20084 moduleSpace"><a href="javascript:OpenDiv();"
+                                                                          class="serviceButton">了解详细课程内容</a> <!---->
+                    </div>
+                </div>
+                <div>
+                    <div class="module-block module-20045 moduleSpace">
+                        <div class="module-20045-content1 module-20045-marginBottom"><span class="innerIcon"></span>
+                            <span class="innerTitle sjk_cd_textH1">授课教师</span></div>
+                        <div class="module-20045-content2"><span
+                                class="innerTitle sjk_cd_textH2">强大导师阵容，手把手助你成为编程超新星</span></div>
+                    </div>
+                </div>
+                <div th:each="obj,iterStat:${courseDetail.courseTeacherList}">
+                    <div class="module-block module-20053 moduleSpace">
+                        <div class="module20053bg">
+                            <div class="introTeacherContainer moduleConContainerCommonStyle">
+                                <div class="introTeacherContainerPc" >
+                                    <div class="teacherAvator">
+                                        <img th:src="${obj.photo}==null ? 'img/favicon.png' : 'course/loadCourseImg?uuid='+${obj.photo}"/>
                                     </div>
-                                    <div class="teacherCon sjk_cd_mainText2" th:text="${obj.content}">· 曾任职美国 About.com、第九课堂、新浪微米、周伯通招聘
-                                        · 创业黑马高管营导师、小饭桌创业课堂创业导师
-                                        · 36 氪、网易、知乎专栏作者
-                                    </div>
-<!--                                    <div class="bookDetail">-->
-									<!--                                        <div class="bookImage"><img src="//img.sanjieke.cn/online_class/bookintro.png"-->
-									<!--                                                                    alt></div>-->
-									<!--                                        <div class="bookIntro"><span class="bookIntro-con1">黄有璨著作《运营之光》</span> <span-->
-									<!--                                                class="bookIntro-con2">2016 年度豆瓣「十大商业经管类书籍」中唯一一本工作技能类入选书籍</span></div>-->
-									<!--                                    </div>-->
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-
-
-				<div >
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div >
 					<!-- test1 -->
 					<div>
 						<div class="module-block module-20045 moduleSpace">
@@ -331,53 +213,41 @@
 						</div>
 					</div>
 				</div>
+                
+                <div>
+                    <div class="module-block moduleSpace module-20043">
+                        <div class="module-20043-content"><span class="innerIcon"></span> <span
+                                class="innerTitle sjk_cd_textH1">课程内容</span></div>
+                    </div>
+                </div>
+                <div >
+                    <div class="module-block module-20073 moduleSpace">
+                        <div class="titleImgContainer moduleConContainerCommonStyle">
+                            <p class="titleImgContainer-title sjk_cd_moduleInnerTitle">更多实战案例，等你在课程中解锁！</p>
+                            <div class="imgContainer">
+                                <div class="titleImgItem" th:each="obj,iterStat:${courseDetail.courseCaseList}">
+                                    <p class="title sjk_cd_moduleInnerTitleThin" th:text="${obj.title}">创造力星球</p>
+                                    <div class="img">
+                                        <img th:src="${obj.img}==null ? 'img/favicon.png' : 'course/loadCourseImg?uuid='+${obj.img}"/>
+                                    </div>
+                                </div>
 
-
-
-
-				<div id="a6">
-						
-					</div>
-				<div class="test1" th:data-type="${courseDetail.course.type}">
-					<div class="module-block moduleSpace module-20043">
-						<div class="module-20043-content">
-							<span class="innerIcon"></span> <span
-								class="innerTitle sjk_cd_textH1">课程内容</span>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div class="module-block module-20073 moduleSpace">
-						<div class="titleImgContainer moduleConContainerCommonStyle">
-							<p class="titleImgContainer-title sjk_cd_moduleInnerTitle">结合教案内容的教学，等你在课程中解锁！</p>
-							<div class="imgContainer">
-								<div class="titleImgItem"
-									th:each="obj,iterStat:${courseDetail.courseCaseList}">
-									<p class="title sjk_cd_moduleInnerTitleThin"
-										th:text="${obj.title}">拼多多爆款转化型文案拆解</p>
-									<div class="img">
-										<img
-											th:src="${obj.img}==null ? 'img/favicon.png' : 'course/loadCourseImg?uuid='+${obj.img}" />
-									</div>
-								</div>
-
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="a7">
-						
-					</div>
-				<div th:style="${courseDetail.course.type}==1 ? '' : 'display:none'">
-					<div>
-						<div class="module-block moduleSpace module-20043">
-							<div class="module-20043-content">
-								<span class="innerIcon"></span> <span
-									class="innerTitle sjk_cd_textH1">线下教学服务模式</span>
-							</div>
-						</div>
-					</div>
-					<div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div th:style="${courseDetail.course.type}==1 ? '' : 'display:none'">
+                
+                <div>
+                    <div class="module-block moduleSpace module-20043">
+                        <div class="module-20043-content">
+                            <span class="innerIcon"></span>
+                            <span class="innerTitle sjk_cd_textH1">教学服务模式</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
 						<div class="module-block module-20074 moduleSpace">
 							<div class="serviceContainer moduleConContainerCommonStyle">
 								<p class="serviceTitle sjk_cd_moduleInnerTitle">全面升级的线下教学模式+学习效果+服务保障</p>
@@ -422,25 +292,20 @@
 							</div>
 						</div>
 					</div>
-					<div>
-						<div class="module-block module-20084 moduleSpace">
-							<a href="javascript:OpenDiv();" class="serviceButton">了解详细教学服务</a>
-							<!---->
-						</div>
-					</div>
-					<div id="a8">
-						
-					</div>
-					<div>
-						<div class="module-block module-20045 moduleSpace">
-							<div class="module-20045-content1">
-								<span class="innerIcon"></span> <span
-									class="innerTitle sjk_cd_textH1">学员反馈</span>
-							</div>
-							<!---->
-						</div>
-					</div>
-					<div>
+                <div>
+                    <div class="module-block module-20084 moduleSpace"><a href="javascript:OpenDiv();"
+                                                                          class="serviceButton">了解详细教学服务</a> <!---->
+                    </div>
+                </div>
+                <div>
+                    <div class="module-block module-20045 moduleSpace">
+                        <div class="module-20045-content1">
+                            <span class="innerIcon"></span>
+                            <span class="innerTitle sjk_cd_textH1">学员反馈</span>
+                        </div> <!---->
+                    </div>
+                </div>
+                <div>
 						<div class="module-block module-20065 moduleSpace">
 							<div class="titleImgContainer moduleConContainerCommonStyle">
 								<p class="titleImgContainer-title sjk_cd_moduleInnerTitle"></p>
@@ -452,18 +317,13 @@
 							</div>
 						</div>
 					</div>
-					<div id="a9">
-						
-					</div>
-					<div>
-						<div class="module-block moduleSpace module-20043">
-							<div class="module-20043-content">
-								<span class="innerIcon"></span> <span
-									class="innerTitle sjk_cd_textH1">7 天无条件退款</span>
-							</div>
-						</div>
-					</div>
-					<div>
+                <div>
+                    <div class="module-block moduleSpace module-20043">
+                        <div class="module-20043-content"><span class="innerIcon"></span> <span
+                                class="innerTitle sjk_cd_textH1">7 天无条件退款</span></div>
+                    </div>
+                </div>
+                <div>
 						<div class="module-block module-20076 moduleSpace">
 							<div class="imgContentContainer moduleConContainerCommonStyle">
 								<!--                            <div class="imgContentContainer-rightM">-->
@@ -496,18 +356,13 @@
 							</div>
 						</div>
 					</div>
-					<div id="a10">
-						
-					</div>
-					<div>
-						<div class="module-block moduleSpace module-20043">
-							<div class="module-20043-content">
-								<span class="innerIcon"></span> <span
-									class="innerTitle sjk_cd_textH1">合作伙伴</span>
-							</div>
-						</div>
-					</div>
-					<div>
+                <div>
+                    <div class="module-block moduleSpace module-20043">
+                        <div class="module-20043-content"><span class="innerIcon"></span> <span
+                                class="innerTitle sjk_cd_textH1">合作伙伴</span></div>
+                    </div>
+                </div>
+                <div>
 						<div class="module-block module-20055 moduleSpace">
 							<div class="companyContainer moduleConContainerCommonStyle">
 								<p class="companyContainerTttle sjk_cd_textH2">目前已有超过30+校区选择创造力星球课程作为430课堂</p>
@@ -538,34 +393,41 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div>
-					<div class="module-block module-20058" style="display: none;">
-						<div class="container20058 moduleConContainerCommonStyle">
-							<div class="container20058Inner">
-								<div class="fixedMenuContainer">
-									<div class="menuList"></div>
+                
+                
+                <div>
+                    <div class="module-block module-20058" style="display:none;">
+                        <div class="container20058 moduleConContainerCommonStyle">
+                            <div class="container20058Inner">
+                                <div class="fixedMenuContainer">
+                                    <div class="menuList"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+                <div class="consultantCodePopup_mark" id="div1"
+								style="display: none">
+								<div class="consultantCodePopup">
+									<span class="consultantCodePopup-close"
+										onclick="javascript:CloseDiv();"></span>
+									<p class="consultantCodePopup-p1">欢迎扫码咨询</p>
+									<p class="consultantCodePopup-p2">购课、选课遇到问题？扫码添加学习顾问为你解答！</p>
+									<img src="/static/img/qrcode.png" alt=""
+										class="consultantCodePopup-img">
+									<p class="consultantCodePopup-p3">添加后可直接留言，顾问会在24小时内回复！</p>
+									<p class="consultantCodePopup-p3">（节假日期间回复较慢还请谅解）</p>
 								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-				<!---->
-			</div>
-			</div>
-			<div th:insert="~{public :: public_footer}"></div>
-		</div>
-	</div>
-	</div>
-	<!-- body -->
+                
+            <div th:insert="~{public :: public_footer}"></div>
+        </div>
+    </div>
+</div>
 
-	
-
-	<!-- body -->
-
-	<!-- script -->
-
-	<script>
+<script>
 		function OpenDiv() {
 
 			document.getElementById("div1").style.display = "block";
@@ -582,11 +444,7 @@
 
 		}
 	</script>
-
-	<!-- script -->
-
-
-
+	
 	<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<!-- 包括所有已编译的插件 -->
@@ -601,12 +459,6 @@
 		});
 		$('body').scrollspy({ target: '.navbar-example' })
 	</script>
-	<script>
-		var xiaoshi7tian = $(".courseDetailContainer").attr("id");
-		console.log(xiaoshi7tian);
-	</script>
-
 
 </body>
-
 </html>
